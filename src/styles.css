@@ -1,0 +1,35 @@
+.home {
+  color: red;
+  width: 2.5rem;
+}
+
+.home:hover {
+  color: rgba(255, 0, 0, 0.514);
+}
+
+.work {
+  color: blue;
+  width: 2.2rem;
+}
+
+.work:hover {
+  color: rgba(0, 0, 255, 0.521);
+}
+
+.exp {
+  color: rgb(204, 0, 255);
+  width: 4.8rem;
+}
+
+.exp:hover {
+  color: rgba(255, 255, 0, 0.493);
+}
+
+.con {
+  color: rgb(0, 202, 0);
+  width: 3.3rem;
+}
+
+.con:hover {
+  color: gray;
+}

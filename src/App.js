@@ -1,12 +1,13 @@
 import React from "react";
-import 'semantic-ui-css/semantic.min.css'
+import BasicTabs from "./Components/BasicTabs";
+import "./App.css";
 
 const App = () => {
   return (
     <div>
-
+      <BasicTabs />
     </div>
   );
-}
+};
 
 export default App;

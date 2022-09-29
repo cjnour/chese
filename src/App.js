@@ -1,11 +1,15 @@
 import React from "react";
-import BasicTabs from "./Components/BasicTabs";
 import "./App.css";
 
 const App = () => {
   return (
-    <div>
-      <BasicTabs />
+    <div id="container">
+      <div id="right">
+        <h4>home</h4>
+        <h4>work</h4>
+        <h4>experience</h4>
+        <h4>contact</h4>
+      </div>
     </div>
   );
 };

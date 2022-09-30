@@ -3,7 +3,7 @@ import "../styles.css";
 
 const Tabs = () => {
   return (
-    <div>
+    <div className="wrapper">
       <h4
         className="home"
         onClick={() => {

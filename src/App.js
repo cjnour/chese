@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setMouseLoader(false);
-    }, 2000);
+    }, 1200);
   });
 
   return <div>{mouseLoader ? <Loading /> : <Tabs />}</div>;

@@ -1,6 +1,6 @@
 .home {
   color: red;
-  width: 2.5rem;
+  width: 2.9rem;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -15,7 +15,7 @@
 
 .work {
   color: blue;
-  width: 2.2rem;
+  width: 2.5rem;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -30,7 +30,7 @@
 
 .exp {
   color: rgb(204, 0, 255);
-  width: 4.8rem;
+  width: 5.6rem;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -45,7 +45,7 @@
 
 .con {
   color: rgb(0, 202, 0);
-  width: 3.3rem;
+  width: 3.9rem;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -61,7 +61,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  margin-top: 2.1rem;
+  margin-top: 1.6rem;
   float: right;
   margin-right: 4%;
 }
@@ -70,5 +70,9 @@
   float: left;
   margin-left: 4%;
   margin-top: 1rem;
-  width: 8rem;
+  width: 6rem;
+}
+
+.cheselogo:hover {
+  opacity: 0.8;
 }

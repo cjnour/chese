@@ -12,7 +12,36 @@ const App = () => {
     }, 1200);
   });
 
-  return <div>{mouseLoader ? <Loading /> : <NavBar />}</div>;
+  return (
+    <div>
+      {mouseLoader ? (
+        <Loading />
+      ) : (
+        <div>
+          <div
+            style={{
+              height: "100px",
+              border: "5px solid #000",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <NavBar />
+          </div>
+          <footer
+            style={{
+              height: "40px",
+              width: "100%",
+              background: "#f00",
+              marginTop: "auto",
+            }}
+          >
+            a website by
+          </footer>
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default App;

@@ -1,44 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
-import "./styles.css";
+import Tabs from "./Components/Tabs";
+import Loading from "./Components/Loading";
 
 const App = () => {
-  return (
-    <div>
-      <h4
-        className="home"
-        onClick={() => {
-          console.log("home");
-        }}
-      >
-        home
-      </h4>
-      <h4
-        className="work"
-        onClick={() => {
-          console.log("work");
-        }}
-      >
-        work
-      </h4>
-      <h4
-        className="exp"
-        onClick={() => {
-          console.log("exp");
-        }}
-      >
-        experience
-      </h4>
-      <h4
-        className="con"
-        onClick={() => {
-          console.log("con");
-        }}
-      >
-        contact
-      </h4>
-    </div>
-  );
+  const [mouseLoader, setMouseLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setMouseLoader(false);
+    }, 2000);
+  });
+
+  return <div>{mouseLoader ? <Loading /> : <Tabs />}</div>;
 };
 
 export default App;

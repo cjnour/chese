@@ -22,7 +22,7 @@
 }
 
 .exp:hover {
-  color: rgba(255, 255, 0, 0.493);
+  color: rgba(204, 0, 255, 0.5);
 }
 
 .con {
@@ -31,5 +31,5 @@
 }
 
 .con:hover {
-  color: gray;
+  color: rgba(0, 202, 0, 0.493);
 }

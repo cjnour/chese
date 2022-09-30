@@ -6,7 +6,7 @@ const Loading = () => {
   const [blueShow, setBlueShow] = useState(false);
   const [greenShow, setGreenShow] = useState(false);
 
-  useEffect(async () => {
+  useEffect(() => {
     let timer1 = setTimeout(() => {
       setRedShow(true);
     }, 300);
@@ -22,7 +22,7 @@ const Loading = () => {
       clearTimeout(timer2);
       clearTimeout(timer3);
     };
-  });
+  }, []);
 
   return (
     <div

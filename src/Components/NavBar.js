@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import chese_logo from "../assets/chese_wback.png";
 import { Link } from "react-router-dom";
 import "../styles.css";
+import { connect } from "react-redux";
+import { setRoute } from "../Redux/Main/MainActions";
 
-const NavBar = () => {
-  const [route, setRoute] = useState("home");
-
+const NavBar = (props) => {
   return (
     <div>
       <div>
@@ -14,11 +14,11 @@ const NavBar = () => {
         </a>
       </div>
       <div className="navbar">
-        <Link to="/home" className="navitemslink">
+        <Link to="/" className="navitemslink">
           <h3
             className="home"
             onClick={() => {
-              console.log("home");
+              props.setRoute("");
             }}
           >
             home
@@ -28,7 +28,7 @@ const NavBar = () => {
           <h3
             className="work"
             onClick={() => {
-              console.log("work");
+              props.setRoute("work");
             }}
           >
             work
@@ -38,7 +38,7 @@ const NavBar = () => {
           <h3
             className="exp"
             onClick={() => {
-              console.log("exp");
+              props.setRoute("experience");
             }}
           >
             experience
@@ -48,7 +48,7 @@ const NavBar = () => {
           <h3
             className="con"
             onClick={() => {
-              console.log("con");
+              props.setRoute("contact");
             }}
           >
             contact
@@ -59,4 +59,16 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setRoute: (route) => dispatch(setRoute(route)),
+  };
+};
+
+const mapStateToProps = (state) => {
+  return {
+    route: state.MainReducer.route,
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

@@ -80,13 +80,13 @@
 .moveArrow {
   position: relative;
   bottom: -14.2em;
-  animation-name: mymove;
+  animation-name: mousemove;
   animation-iteration-count: 1;
   animation-direction: normal;
-  animation-duration: 22s;
+  animation-duration: 5s;
 }
 
-@keyframes mymove {
+@keyframes mousemove {
   from {
     transform: translateX(-60vw);
   }

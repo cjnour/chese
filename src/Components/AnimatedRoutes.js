@@ -3,7 +3,7 @@ import Home from "../Pages/Home";
 import Work from "../Pages/Work";
 import Experience from "../Pages/Experience";
 import Contact from "../Pages/Contact";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 const AnimatedRoutes = () => {
@@ -11,12 +11,20 @@ const AnimatedRoutes = () => {
 
   return (
     <AnimatePresence>
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Switch location={location} key={location.pathname}>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/work">
+          <Work />
+        </Route>
+        <Route path="/experience">
+          <Experience />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      </Switch>
     </AnimatePresence>
   );
 };

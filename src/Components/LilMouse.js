@@ -25,7 +25,7 @@ const LilMouse = () => {
     let timer = setTimeout(() => {
       setStaticMouse(true);
       setShowMessage(true);
-    }, 22000);
+    }, 5000);
     return () => clearTimeout(timer);
   });
 

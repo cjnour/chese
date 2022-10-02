@@ -6,7 +6,7 @@ export const MainReducer = (state = initialState, action) => {
     case SET_ROUTE: {
       return {
         ...state,
-        width: action.payload,
+        route: action.payload,
       };
     }
     default:

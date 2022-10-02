@@ -47,7 +47,7 @@ const LilMouse = () => {
         </div>
       ) : (
         <div>
-          <MouseMessage />
+          <MouseMessage showMessage={showMessage} />
           <img
             src={mouse_walk}
             alt="catch me if you can"

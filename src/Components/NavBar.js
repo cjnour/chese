@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import chese_logo from "../assets/chese_wback.png";
 import { Link } from "react-router-dom";
 import "../styles.css";
 
 const NavBar = () => {
+  const [route, setRoute] = useState("home");
+
   return (
     <div>
       <div>

@@ -5,6 +5,11 @@ import "../styles.css";
 const NavBar = () => {
   return (
     <div>
+      <div>
+        <a href="/">
+          <img src={chese_logo} alt="chese" className="cheselogo" />
+        </a>
+      </div>
       <div className="navbar">
         <h3
           className="home"
@@ -38,11 +43,6 @@ const NavBar = () => {
         >
           contact
         </h3>
-      </div>
-      <div>
-        <a href="/">
-          <img src={chese_logo} alt="chese" className="cheselogo" />
-        </a>
       </div>
     </div>
   );

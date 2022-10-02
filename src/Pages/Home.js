@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./App.css";
+import React, { useRef } from "react";
 
 const Home = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h1>this is where the magic happens</h1>
+    </div>
+  );
 };
 
 export default Home;

@@ -76,3 +76,19 @@
 .cheselogo:hover {
   opacity: 0.8;
 }
+
+.moveArrow {
+  animation-name: mymove;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-duration: 20s;
+}
+
+@keyframes mymove {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

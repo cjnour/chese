@@ -94,3 +94,39 @@
     transform: translateX(1100px);
   }
 }
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.socials > div {
+  margin: 1rem;
+}
+
+.youtube {
+  width: 10rem;
+}
+
+.youtube:hover {
+  opacity: 0.8;
+}
+
+.github {
+  width: 9rem;
+}
+
+.github:hover {
+  opacity: 0.8;
+}
+
+.inlinked {
+  width: 9rem;
+}
+
+.inlinked:hover {
+  opacity: 0.8;
+}

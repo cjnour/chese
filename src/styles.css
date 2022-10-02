@@ -79,9 +79,8 @@
 
 .moveArrow {
   animation-name: mousemove;
+  animation-duration: 20s;
   animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-duration: 5s;
 }
 
 @keyframes mousemove {

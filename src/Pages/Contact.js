@@ -11,7 +11,7 @@ const Contact = () => {
       exit={{ x: window.innerWidth, transition: { duration: 1 } }}
     >
       <div className="content-wrap">
-        <div style={{ marginTop: "6rem" }}>
+        <div style={{ marginTop: "6rem", position: "relative" }}>
           <div>
             {/* <p>welcome.</p> */}
             <br />

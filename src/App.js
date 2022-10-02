@@ -8,11 +8,6 @@ import { Provider } from "react-redux";
 import { store } from "./Redux/Store/ConfigureStore";
 import Footer from "./Components/Footer";
 
-function useForceUpdate() {
-  let [value, setState] = useState(true);
-  return () => setState(!value);
-}
-
 const App = () => {
   const [mouseLoader, setMouseLoader] = useState(true);
 
@@ -29,12 +24,16 @@ const App = () => {
           {mouseLoader ? (
             <Loading />
           ) : (
-            <div>
-              <div className="page-container">
-                <NavBar useForceUpdate={useForceUpdate} />
+            <div className="page-container" id="stacked-col">
+              <div>
+                <NavBar />
+              </div>
+              <div>
                 <AnimatedRoutes />
               </div>
-              <Footer useForceUpdate={useForceUpdate} />
+              <div>
+                <Footer />
+              </div>
             </div>
           )}
         </Router>

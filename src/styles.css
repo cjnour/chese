@@ -81,17 +81,17 @@
   position: relative;
   bottom: -0.55rem;
   animation-name: mymove;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-direction: normal;
-  animation-duration: 15s;
+  animation-duration: 22s;
 }
 
 @keyframes mymove {
   from {
-    transform: translateX(-1100px);
+    transform: translateX(-60vw);
   }
   to {
-    transform: translateX(1100px);
+    transform: translateX(44vw);
   }
 }
 

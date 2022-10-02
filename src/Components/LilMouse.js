@@ -1,52 +1,76 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import mouse_walk from "../assets/mouse_walk.gif";
-import mouse_stare from "../assets/STARING_MOUSE.png";
 import "../styles.css";
 
 const LilMouse = () => {
-  const [ref, setRef] = useState(null);
-  const [mouseMove, setMouseMove] = useState(true);
-  const [xPos, setXPos] = useState(0);
-  const onButtonClick = () => {
-    setXPos(ref.getBoundingClientRect().x);
-    setMouseMove(false);
-    let timer1 = setTimeout(() => {
-      setMouseMove(true);
-    }, 3000);
-    return () => {
-      clearTimeout(timer1);
-    };
-  };
+  //   const [ref, setRef] = useState(null);
+  //   const [mouseMove, setMouseMove] = useState(true);
+  //   const [xPos, setXPos] = useState(0);
+  //   const onButtonClick = () => {
+  //     setXPos(ref.getBoundingClientRect().x);
+  //     setMouseMove(false);
+  //     let timer1 = setTimeout(() => {
+  //       setMouseMove(true);
+  //     }, 3000);
+  //     return () => {
+  //       clearTimeout(timer1);
+  //     };
+  //   };
+
+  const [staticMouse, setStaticMouse] = useState(false);
+
+  useEffect(() => {
+    let timer = setTimeout(() => {
+      setStaticMouse(true);
+      console.log("hello");
+    }, 22000);
+    return () => clearTimeout(timer);
+  });
+
   return (
     <div>
-      {mouseMove ? (
+      {!staticMouse ? (
         <div className="moveArrow">
           <img
             src={mouse_walk}
             alt="catch me if you can"
-            style={{ width: "7.3rem" }}
             id="mouse"
-            ref={(ref) => {
-              if (!ref) return;
-              return setRef(ref);
-            }}
-            onClick={onButtonClick}
+            style={{ width: "7.3rem" }}
+            // ref={(ref) => {
+            //   if (!ref) return;
+            //   return setRef(ref);
+            // }}
+            // onClick={onButtonClick}
           />
         </div>
       ) : (
         <div>
           <img
+            src={mouse_walk}
+            alt="catch me if you can"
+            id="mouse"
             style={{
+              width: "7.3rem",
               position: "fixed",
-              left: `${xPos + 50}px`,
-              bottom: "0rem",
-              width: "2rem",
-              height: "4.5rem",
+              right: "0rem",
+              bottom: "-0.25rem",
             }}
-            src={mouse_stare}
-            alt="AY IM WALKIN HERE"
           />
         </div>
+
+        // <div>
+        //   <img
+        //     style={{
+        //       position: "fixed",
+        //       left: `${xPos + 50}px`,
+        //       bottom: "0rem",
+        //       width: "2rem",
+        //       height: "4.5rem",
+        //     }}
+        //     src={mouse_stare}
+        //     alt="AY IM WALKIN HERE"
+        //   />
+        // </div>
       )}
     </div>
   );

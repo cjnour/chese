@@ -4,7 +4,10 @@ import cjnour_logo from "../assets/cjnour_logo.png";
 function Footer() {
   return (
     <div className="container">
-      <div className="row">
+      <div
+        className="row"
+        style={{ position: "fixed", bottom: "-0.1rem", left: "1rem" }}
+      >
         <p className="col-sm">
           <div style={{ display: "flex", flexDirection: "row" }}>
             <p style={{ color: "red" }}>a</p>

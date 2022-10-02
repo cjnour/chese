@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import mouse_running_fast from "../assets/mouse_running_180.gif";
+import mouse_walk from "../assets/mouse_walk.gif";
 import mouse_stare from "../assets/STARING_MOUSE.png";
 import "../styles.css";
 
@@ -12,7 +12,7 @@ const LilMouse = () => {
     setMouseMove(false);
     let timer1 = setTimeout(() => {
       setMouseMove(true);
-    }, 5000);
+    }, 3000);
     return () => {
       clearTimeout(timer1);
     };
@@ -22,7 +22,7 @@ const LilMouse = () => {
       {mouseMove ? (
         <div className="moveArrow">
           <img
-            src={mouse_running_fast}
+            src={mouse_walk}
             alt="catch me if you can"
             style={{ width: "7.3rem" }}
             id="mouse"
@@ -38,8 +38,10 @@ const LilMouse = () => {
           <img
             style={{
               position: "fixed",
-              left: `${xPos}px`,
-              top: "50px",
+              left: `${xPos + 50}px`,
+              bottom: "0rem",
+              width: "2rem",
+              height: "4.5rem",
             }}
             src={mouse_stare}
             alt="AY IM WALKIN HERE"

@@ -78,17 +78,19 @@
 }
 
 .moveArrow {
+  position: relative;
+  bottom: -0.55rem;
   animation-name: mymove;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-duration: 20s;
+  animation-duration: 10s;
 }
 
 @keyframes mymove {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-60vw);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(60vw);
   }
 }

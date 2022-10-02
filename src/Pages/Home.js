@@ -5,11 +5,16 @@ import li_logo from "../assets/inlinked.png";
 import welcome from "../assets/welcome.png";
 import Footer from "../Components/Footer";
 import LilMouse from "../Components/LilMouse";
+import { motion } from "framer-motion";
 import "../styles.css";
 
 const Home = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="content-wrap">
         <div style={{ marginTop: "6rem" }}>
           <div>
@@ -37,17 +42,23 @@ const Home = () => {
           </div>
           <div className="socials">
             <div>
-              <a href="https://www.youtube.com/channel/UC8al7q-s0BWKpeaW3Uvfh4Q">
+              <a
+                href="https://www.youtube.com/channel/UC8al7q-s0BWKpeaW3Uvfh4Q"
+                target="_blank"
+              >
                 <img src={yt_logo} alt="youtube" className="youtube" />
               </a>
             </div>
             <div>
-              <a href="https://github.com/cjnour">
+              <a href="https://github.com/cjnour" target="_blank">
                 <img src={gh_logo} alt="github" className="github" />
               </a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/cj-nour-3b82681a0/">
+              <a
+                href="https://www.linkedin.com/in/cj-nour-3b82681a0/"
+                target="_blank"
+              >
                 <img src={li_logo} alt="inlinked" className="inlinked" />
               </a>
             </div>
@@ -58,7 +69,7 @@ const Home = () => {
         <Footer />
         <LilMouse />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -13,11 +13,13 @@ function Footer() {
             <p style={{ color: "red" }}>a</p>
             <p style={{ color: "blue" }}>website</p>
             <p style={{ color: "rgb(0, 202, 0)" }}>by</p>
-            <img
-              src={cjnour_logo}
-              alt="chese"
-              style={{ width: "6.25rem", height: "2.98rem" }}
-            />
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <img
+                src={cjnour_logo}
+                alt="chese"
+                style={{ width: "6.25rem", height: "2.98rem" }}
+              />
+            </a>
           </div>
         </p>
       </div>

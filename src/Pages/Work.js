@@ -37,10 +37,7 @@ const Work = () => {
           <div className="socials"></div>
         </div>
       </div>
-      <div>
-        <Footer />
-        <LilMouse />
-      </div>
+      <div>{/* <Footer /> */}</div>
     </motion.div>
   );
 };

@@ -78,8 +78,6 @@
 }
 
 .moveArrow {
-  position: relative;
-  bottom: -14.2em;
   animation-name: mousemove;
   animation-iteration-count: 1;
   animation-direction: normal;
@@ -88,10 +86,10 @@
 
 @keyframes mousemove {
   from {
-    transform: translateX(-60vw);
+    transform: translateX(0vw);
   }
   to {
-    transform: translateX(44vw);
+    transform: translateX(95vw);
   }
 }
 
@@ -100,7 +98,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 .socials > div {

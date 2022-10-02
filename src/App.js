@@ -6,6 +6,12 @@ import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./Components/AnimatedRoutes";
 import { Provider } from "react-redux";
 import { store } from "./Redux/Store/ConfigureStore";
+import Footer from "./Components/Footer";
+
+function useForceUpdate() {
+  let [value, setState] = useState(true);
+  return () => setState(!value);
+}
 
 const App = () => {
   const [mouseLoader, setMouseLoader] = useState(true);
@@ -23,9 +29,12 @@ const App = () => {
           {mouseLoader ? (
             <Loading />
           ) : (
-            <div className="page-container">
-              <NavBar />
-              <AnimatedRoutes />
+            <div>
+              <div className="page-container">
+                <NavBar useForceUpdate={useForceUpdate} />
+                <AnimatedRoutes />
+              </div>
+              <Footer useForceUpdate={useForceUpdate} />
             </div>
           )}
         </Router>

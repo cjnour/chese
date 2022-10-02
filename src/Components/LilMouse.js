@@ -18,6 +18,31 @@ const LilMouse = () => {
   //     };
   //   };
 
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  }
+
+  function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(
+      getWindowDimensions()
+    );
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    return windowDimensions;
+  }
+
   const [staticMouse, setStaticMouse] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
 
@@ -29,15 +54,26 @@ const LilMouse = () => {
     return () => clearTimeout(timer);
   });
 
+  const { height, width } = useWindowDimensions();
+
   return (
     <div>
+      <div>
+        {width}
+        {height}
+      </div>
       {!staticMouse ? (
         <div className="moveArrow">
           <img
             src={mouse_walk}
             alt="catch me if you can"
-            id="mouse"
-            style={{ width: "7.3rem" }}
+            id="mouse_walk"
+            style={{
+              width: "7.3rem",
+              position: "fixed",
+              left: "0",
+              bottom: "0",
+            }}
             // ref={(ref) => {
             //   if (!ref) return;
             //   return setRef(ref);
@@ -51,12 +87,12 @@ const LilMouse = () => {
           <img
             src={mouse_walk}
             alt="catch me if you can"
-            id="mouse"
+            id="mouse_wait"
             style={{
               width: "7.3rem",
               position: "fixed",
-              right: "0rem",
-              bottom: "-0.25rem",
+              right: "0",
+              bottom: "0",
             }}
           />
         </div>

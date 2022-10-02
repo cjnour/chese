@@ -11,7 +11,7 @@ const Experience = () => {
       exit={{ x: window.innerWidth, transition: { duration: 1 } }}
     >
       <div className="content-wrap">
-        <div style={{ marginTop: "6rem" }}>
+        <div style={{ marginTop: "10rem" }}>
           <div>
             {/* <p>welcome.</p> */}
             <br />
@@ -37,10 +37,7 @@ const Experience = () => {
           <div className="socials"></div>
         </div>
       </div>
-      <div>
-        <Footer />
-        <LilMouse />
-      </div>
+      <div>{/* <Footer /> */}</div>
     </motion.div>
   );
 };

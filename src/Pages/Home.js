@@ -21,6 +21,7 @@ const Home = () => {
             {/* <p>welcome.</p> */}
             <img src={welcome} alt="welcome" style={{ width: "8rem" }} />
             <br />
+            <br />
             <h2>
               my name is <span style={{ color: "red" }}>CJ </span>
               <span style={{ color: "blue" }}>Nour</span>.
@@ -65,10 +66,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
-        <Footer />
-        <LilMouse />
-      </div>
+      <div>{/* <Footer /> */}</div>
     </motion.div>
   );
 };

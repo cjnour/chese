@@ -1,5 +1,6 @@
 import React from "react";
 import cjnour_logo from "../assets/cjnour_logo.png";
+import LilMouse from "./LilMouse";
 
 function Footer() {
   return (
@@ -13,7 +14,10 @@ function Footer() {
             <p style={{ color: "red" }}>a</p>
             <p style={{ color: "blue" }}>website</p>
             <p style={{ color: "rgb(0, 202, 0)" }}>by</p>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+            >
               <img
                 src={cjnour_logo}
                 alt="chese"
@@ -23,6 +27,7 @@ function Footer() {
           </div>
         </p>
       </div>
+      <LilMouse />
     </div>
   );
 }

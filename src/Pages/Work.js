@@ -8,7 +8,7 @@ const Work = () => {
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 1 } }}
     >
-      Work
+      <p>coming soon...</p>
     </motion.div>
   );
 };

@@ -8,7 +8,7 @@ const Contact = () => {
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 1 } }}
     >
-      Contact
+      <p>coming soon...</p>
     </motion.div>
   );
 };

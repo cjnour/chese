@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import mouse_walk from "../assets/mouse_walk.gif";
 import "../styles.css";
+import MouseMessage from "./MouseMessage";
 
 const LilMouse = () => {
   //   const [ref, setRef] = useState(null);
@@ -18,11 +19,12 @@ const LilMouse = () => {
   //   };
 
   const [staticMouse, setStaticMouse] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
 
   useEffect(() => {
     let timer = setTimeout(() => {
       setStaticMouse(true);
-      console.log("hello");
+      setShowMessage(true);
     }, 22000);
     return () => clearTimeout(timer);
   });
@@ -45,6 +47,7 @@ const LilMouse = () => {
         </div>
       ) : (
         <div>
+          <MouseMessage />
           <img
             src={mouse_walk}
             alt="catch me if you can"

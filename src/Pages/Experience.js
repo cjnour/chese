@@ -8,7 +8,7 @@ const Experience = () => {
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 1 } }}
     >
-      Experience
+      <p>coming soon...</p>
     </motion.div>
   );
 };

@@ -12,7 +12,7 @@ const NavBar = () => {
         </a>
       </div>
       <div className="navbar">
-        <Link to="/">
+        <Link to="/home" className="navitemslink">
           <h3
             className="home"
             onClick={() => {
@@ -22,7 +22,7 @@ const NavBar = () => {
             home
           </h3>
         </Link>
-        <Link to="work">
+        <Link to="work" className="navitemslink">
           <h3
             className="work"
             onClick={() => {
@@ -32,7 +32,7 @@ const NavBar = () => {
             work
           </h3>
         </Link>
-        <Link to="experience">
+        <Link to="experience" className="navitemslink">
           <h3
             className="exp"
             onClick={() => {
@@ -42,7 +42,7 @@ const NavBar = () => {
             experience
           </h3>
         </Link>
-        <Link to="contact">
+        <Link to="contact" className="navitemslink">
           <h3
             className="con"
             onClick={() => {

@@ -83,14 +83,14 @@
   animation-name: mymove;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-duration: 10s;
+  animation-duration: 15s;
 }
 
 @keyframes mymove {
   from {
-    transform: translateX(-60vw);
+    transform: translateX(-1100px);
   }
   to {
-    transform: translateX(60vw);
+    transform: translateX(1100px);
   }
 }

@@ -11,9 +11,9 @@ import "../styles.css";
 const Home = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 1 } }}
     >
       <div className="content-wrap">
         <div style={{ marginTop: "6rem" }}>

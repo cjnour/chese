@@ -79,7 +79,7 @@
 
 .moveArrow {
   animation-name: mousemove;
-  animation-duration: 20s;
+  animation-duration: 8s;
   animation-iteration-count: 1;
 }
 
@@ -88,7 +88,7 @@
     transform: translateX(0vw);
   }
   to {
-    transform: translateX(95vw);
+    transform: translateX(calc(100vw - 116px));
   }
 }
 
@@ -106,29 +106,29 @@
 
 .youtube {
   width: 10rem;
+  animation: ytfloat 1.5s ease-in-out infinite;
 }
 
 .youtube:hover {
   opacity: 0.8;
-  animation: float 1.5s ease-in-out infinite;
 }
 
 .github {
   width: 9rem;
+  animation: ghfloat 1.4s ease-in-out infinite;
 }
 
 .github:hover {
   opacity: 0.8;
-  animation: float 1.5s ease-in-out infinite;
 }
 
 .inlinked {
   width: 9rem;
+  animation: ilfloat 1.3s ease-in-out infinite;
 }
 
 .inlinked:hover {
   opacity: 0.8;
-  animation: float 1.5s ease-in-out infinite;
 }
 
 .navitemslink {
@@ -136,7 +136,22 @@
   height: 0px;
 }
 
-@keyframes float {
+@keyframes ytfloat {
+  0% {
+    filter: drop-shadow(0px 10px 4px #979797);
+    transform: translatey(0px);
+  }
+  50% {
+    filter: drop-shadow(0px 25px 8px #b1b1b1);
+    transform: translatey(-12px);
+  }
+  100% {
+    filter: drop-shadow(0px 10px 4px #979797);
+    transform: translatey(0px);
+  }
+}
+
+@keyframes ghfloat {
   0% {
     filter: drop-shadow(0px 10px 4px #979797);
     transform: translatey(0px);
@@ -144,6 +159,21 @@
   50% {
     filter: drop-shadow(0px 25px 8px #b1b1b1);
     transform: translatey(-15px);
+  }
+  100% {
+    filter: drop-shadow(0px 10px 4px #979797);
+    transform: translatey(0px);
+  }
+}
+
+@keyframes ilfloat {
+  0% {
+    filter: drop-shadow(0px 10px 4px #979797);
+    transform: translatey(0px);
+  }
+  50% {
+    filter: drop-shadow(0px 25px 8px #b1b1b1);
+    transform: translatey(-12px);
   }
   100% {
     filter: drop-shadow(0px 10px 4px #979797);
@@ -166,10 +196,39 @@
   }
 }
 
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 40px 5px #eefbff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px 5px #000000;
+  }
+}
+
+@keyframes glowoff {
+  0% {
+    box-shadow: 0px 0px 40px 5px #000000;
+  }
+  100% {
+    box-shadow: 0px 0px 40px 5px #eefbff;
+  }
+}
+
 .mouse_msg {
   animation: float_msg 1.5s ease-in-out infinite;
 }
 
 .mouse_msg:hover {
   opacity: 0.8;
+}
+
+.wordglow:hover {
+  animation: glow 1s ease-in-out 1;
+  animation-fill-mode: forwards;
+  /* box-shadow: 120px 80px 40px 20px #0ff; */
+}
+
+.wordglow:not(:hover) {
+  animation: glowoff 1s ease-in-out 1;
+  animation-fill-mode: forwards;
 }

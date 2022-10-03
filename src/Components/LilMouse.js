@@ -4,31 +4,6 @@ import "../styles.css";
 import MouseMessage from "./MouseMessage";
 
 const LilMouse = () => {
-  function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height,
-    };
-  }
-
-  function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(
-      getWindowDimensions()
-    );
-
-    useEffect(() => {
-      function handleResize() {
-        setWindowDimensions(getWindowDimensions());
-      }
-
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    return windowDimensions;
-  }
-
   const [staticMouse, setStaticMouse] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
 
@@ -39,15 +14,8 @@ const LilMouse = () => {
     }, 8000);
     return () => clearTimeout(timer);
   });
-
-  const { height, width } = useWindowDimensions();
-
   return (
     <div>
-      <div>
-        {width}
-        {height}
-      </div>
       {!staticMouse ? (
         <div
           style={{

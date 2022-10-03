@@ -23,7 +23,10 @@ const Home = () => {
             <br />
             <br />
             <h2>
-              my name is <span style={{ color: "red" }}>CJ </span>
+              my name is{" "}
+              <span className="wordglow" style={{ color: "red" }}>
+                CJ{" "}
+              </span>
               <span style={{ color: "blue" }}>Nour</span>.
             </h2>
             <h2>

@@ -7,6 +7,7 @@ import AnimatedRoutes from "./Components/AnimatedRoutes";
 import { Provider } from "react-redux";
 import { store } from "./Redux/Store/ConfigureStore";
 import Footer from "./Components/Footer";
+import LilMouse from "./Components/LilMouse";
 
 const App = () => {
   const [mouseLoader, setMouseLoader] = useState(true);
@@ -24,15 +25,22 @@ const App = () => {
           {mouseLoader ? (
             <Loading />
           ) : (
-            <div className="page-container" id="stacked-col">
+            <div>
               <div style={{ height: "7rem" }}>
                 <NavBar />
               </div>
               <div>
                 <AnimatedRoutes />
               </div>
-              <div style={{ backgroundColor: "green" }}>
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: "0.5rem",
+                  left: "1rem",
+                }}
+              >
                 <Footer />
+                <LilMouse />
               </div>
             </div>
           )}

@@ -6,8 +6,6 @@ import { connect } from "react-redux";
 import { setRoute } from "../Redux/Main/MainActions";
 
 const NavBar = (props) => {
-  let forceUpdate = props.useForceUpdate;
-
   return (
     <div>
       <div>
@@ -21,7 +19,6 @@ const NavBar = (props) => {
             className="home"
             onClick={() => {
               props.setRoute("");
-              forceUpdate();
             }}
           >
             home
@@ -32,7 +29,6 @@ const NavBar = (props) => {
             className="work"
             onClick={() => {
               props.setRoute("work");
-              forceUpdate();
             }}
           >
             work
@@ -43,7 +39,6 @@ const NavBar = (props) => {
             className="exp"
             onClick={() => {
               props.setRoute("experience");
-              forceUpdate();
             }}
           >
             experience
@@ -54,7 +49,6 @@ const NavBar = (props) => {
             className="con"
             onClick={() => {
               props.setRoute("contact");
-              forceUpdate();
             }}
           >
             contact

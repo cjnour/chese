@@ -9,24 +9,24 @@ const Contact = () => {
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 1 } }}
+      className="scrollbar"
+      style={{ overflowY: "scroll" }}
     >
+      <h1>
+        <span style={{ color: "#800244" }}>wine </span>and
+        <span style={{ color: "#F7AA3E" }}> chese</span>?
+      </h1>
       <div className="container">
         <div style={{ position: "relative" }} className="text-stuff">
           <br />
-          <p>
-            <h1>
-              <span style={{ color: "#800244" }}>wine </span>and
-              <span style={{ color: "#F7AA3E" }}> chese</span>?
-            </h1>
-            <h2>
-              whether it's a question, a comment, or you just want to say hi
-            </h2>
-            <h2>
-              i'm <span style={{ color: "red" }}>open</span> to chat any{" "}
-              <span style={{ color: "blue" }}>day</span>, any
-              <span style={{ color: "green" }}> time</span>.
-            </h2>
-          </p>
+          <h2>
+            whether it's a question, a comment, or you just want to say hi
+          </h2>
+          <h2>
+            i'm <span style={{ color: "red" }}>open</span> to chat any{" "}
+            <span style={{ color: "blue" }}>day</span>, any
+            <span style={{ color: "green" }}> time</span>.
+          </h2>
           <div style={{ textAlign: "left" }}>
             <a
               href="https://mail.google.com/mail/u/?tab=rm&ogbl#inbox?compose=new"

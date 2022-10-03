@@ -4,12 +4,9 @@ import LilMouse from "./LilMouse";
 
 function Footer() {
   return (
-    <div className="container">
-      <div
-        className="row"
-        style={{ position: "fixed", bottom: "-0.1rem", left: "1rem" }}
-      >
-        <p className="col-sm">
+    <div>
+      <div style={{ position: "fixed", bottom: "-0.1rem", left: "1rem" }}>
+        <p>
           <div style={{ display: "flex", flexDirection: "row" }}>
             <p style={{ color: "red" }}>a</p>
             <p style={{ color: "blue" }}>website</p>

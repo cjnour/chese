@@ -25,13 +25,13 @@ const App = () => {
             <Loading />
           ) : (
             <div className="page-container" id="stacked-col">
-              <div>
+              <div style={{ height: "7rem" }}>
                 <NavBar />
               </div>
               <div>
                 <AnimatedRoutes />
               </div>
-              <div>
+              <div style={{ backgroundColor: "green" }}>
                 <Footer />
               </div>
             </div>

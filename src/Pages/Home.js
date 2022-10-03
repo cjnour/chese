@@ -3,8 +3,6 @@ import yt_logo from "../assets/youtube.png";
 import gh_logo from "../assets/github.png";
 import li_logo from "../assets/inlinked.png";
 import welcome from "../assets/welcome.png";
-import Footer from "../Components/Footer";
-import LilMouse from "../Components/LilMouse";
 import { motion } from "framer-motion";
 import "../styles.css";
 

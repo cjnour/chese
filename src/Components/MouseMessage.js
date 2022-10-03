@@ -37,7 +37,7 @@ const MouseMessage = (props) => {
                 id="work_msg"
                 className="mouse_msg"
                 style={{
-                  width: "13rem",
+                  width: "15rem",
                   position: "fixed",
                   right: "0.5rem",
                   bottom: "1.5rem",
@@ -59,7 +59,7 @@ const MouseMessage = (props) => {
                 id="exp_msg"
                 className="mouse_msg"
                 style={{
-                  width: "13rem",
+                  width: "15rem",
                   position: "fixed",
                   right: "0.5rem",
                   bottom: "1.5rem",
@@ -81,7 +81,7 @@ const MouseMessage = (props) => {
                 id="contact_msg"
                 className="mouse_msg"
                 style={{
-                  width: "13rem",
+                  width: "15rem",
                   position: "fixed",
                   right: "0.5rem",
                   bottom: "1.5rem",
@@ -100,7 +100,7 @@ const MouseMessage = (props) => {
                 id="contact_msg"
                 className="mouse_msg"
                 style={{
-                  width: "13rem",
+                  width: "15rem",
                   position: "fixed",
                   right: "0.5rem",
                   bottom: "1.5rem",

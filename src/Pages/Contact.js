@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Footer from "../Components/Footer";
-import LilMouse from "../Components/LilMouse";
+import me from "../assets/me.jpg";
+import "../styles.css";
 
 const Contact = () => {
   return (
@@ -10,34 +10,46 @@ const Contact = () => {
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 1 } }}
     >
-      <div className="content-wrap">
-        <div style={{ marginTop: "6rem", position: "relative" }}>
-          <div>
-            {/* <p>welcome.</p> */}
-            <br />
+      <div className="container">
+        <div style={{ position: "relative" }} className="text-stuff">
+          <br />
+          <p>
+            <h1>
+              <span style={{ color: "#800244" }}>wine </span>and
+              <span style={{ color: "#F7AA3E" }}> chese</span>?
+            </h1>
             <h2>
-              my name is <span style={{ color: "red" }}>CJ </span>
-              <span style={{ color: "blue" }}>Nour</span>.
+              whether it's a question, a comment, or you just want to say hi
             </h2>
             <h2>
-              i'm an aspiring{" "}
-              <span style={{ color: "rgb(204, 0, 255)" }}>engineer </span> with
-              passions for{" "}
-              <span style={{ color: "rgb(0, 202, 0)" }}>software</span>,
-              <span style={{ color: "orange" }}> hardware</span>, and{" "}
-              <span style={{ color: "red" }}>learning</span>.
+              i'm <span style={{ color: "red" }}>open</span> to chat any{" "}
+              <span style={{ color: "blue" }}>day</span>, any
+              <span style={{ color: "green" }}> time</span>.
             </h2>
-            <h2>
-              i <span style={{ color: "red" }}>specialize</span> in delivering
-              <span style={{ color: "blue" }}> high</span>-
-              <span style={{ color: "rgb(204, 0, 255)" }}>tech </span>{" "}
-              <span style={{ color: "rgb(0, 202, 0)" }}>solutions</span>.
-            </h2>
+          </p>
+          <div style={{ textAlign: "left" }}>
+            <a
+              href="https://mail.google.com/mail/u/?tab=rm&ogbl#inbox?compose=new"
+              target="_blank"
+            >
+              email
+            </a>{" "}
+            <a
+              href="https://www.linkedin.com/in/cj-nour-3b82681a0/"
+              target="_blank"
+            >
+              linkedin
+            </a>
           </div>
-          <div className="socials"></div>
+          <br />
+          <br />
+          <br />
+        </div>
+        <div style={{ margin: "3%" }}></div>
+        <div className="pic-stuff">
+          <img src={me} alt="me" width="300" />
         </div>
       </div>
-      <div>{/* <Footer /> */}</div>
     </motion.div>
   );
 };

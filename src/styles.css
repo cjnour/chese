@@ -88,7 +88,7 @@
     transform: translateX(0vw);
   }
   to {
-    transform: translateX(calc(100vw - 116px));
+    transform: translateX(calc(100vw - 118px));
   }
 }
 
@@ -225,10 +225,25 @@
 .wordglow:hover {
   animation: glow 1s ease-in-out 1;
   animation-fill-mode: forwards;
-  /* box-shadow: 120px 80px 40px 20px #0ff; */
 }
 
 .wordglow:not(:hover) {
   animation: glowoff 1s ease-in-out 1;
   animation-fill-mode: forwards;
+}
+
+.text-stuff {
+  text-align: right;
+  float: right;
+}
+
+.pic-stuff {
+  float: right;
+}
+
+.container {
+  margin: 150px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
 }

@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Footer from "../Components/Footer";
-import LilMouse from "../Components/LilMouse";
 
 const Experience = () => {
   return (
@@ -37,7 +35,6 @@ const Experience = () => {
           <div className="socials"></div>
         </div>
       </div>
-      <div>{/* <Footer /> */}</div>
     </motion.div>
   );
 };

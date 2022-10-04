@@ -39,7 +39,7 @@ const MouseMessage = (props) => {
                 style={{
                   width: "15rem",
                   position: "fixed",
-                  right: "0.5rem",
+                  right: "1rem",
                   bottom: "1.5rem",
                 }}
               />
@@ -61,7 +61,7 @@ const MouseMessage = (props) => {
                 style={{
                   width: "15rem",
                   position: "fixed",
-                  right: "0.5rem",
+                  right: "1rem",
                   bottom: "1.5rem",
                 }}
               />
@@ -83,7 +83,7 @@ const MouseMessage = (props) => {
                 style={{
                   width: "15rem",
                   position: "fixed",
-                  right: "0.5rem",
+                  right: "1rem",
                   bottom: "1.5rem",
                 }}
               />
@@ -102,7 +102,7 @@ const MouseMessage = (props) => {
                 style={{
                   width: "15rem",
                   position: "fixed",
-                  right: "0.5rem",
+                  right: "1rem",
                   bottom: "1.5rem",
                 }}
               />

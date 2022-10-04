@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import "../styles.css";
 
 const Work = () => {
   return (
@@ -7,20 +8,18 @@ const Work = () => {
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 1 } }}
-      className="scrollbar"
-      style={{ overflowY: "scroll" }}
     >
-      <h1 style={{ color: "blue" }}>what i've built</h1>
-      <div className="content-wrap">
-        <div style={{ marginTop: "6rem" }}>
-          <div>
-            <h2>
-              my name is <span style={{ color: "red" }}>CJ </span>
-              <span style={{ color: "blue" }}>Nour</span>.
-            </h2>
-          </div>
-          <div className="socials"></div>
+      <div>
+        <h1 style={{ color: "blue" }}>what i've built</h1>
+      </div>
+      <div className="wrapper scrollbox_delayed">
+        <div className="main-content">
+          <h2>
+            my name is <span style={{ color: "red" }}>CJ </span>
+            <span style={{ color: "blue" }}>Nour</span>.
+          </h2>
         </div>
+        <div className="empty-panel"></div>
       </div>
     </motion.div>
   );

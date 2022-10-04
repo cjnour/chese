@@ -43,7 +43,7 @@ const LilMouse = () => {
             style={{
               width: "7.3rem",
               position: "fixed",
-              right: "0",
+              right: "12px",
               bottom: "-0.25rem",
             }}
           />

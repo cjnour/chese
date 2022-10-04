@@ -9,14 +9,6 @@ const ArrowButton = () => {
     setArrowScrollButton(false);
   };
 
-  useEffect(() => {
-    document.getElementById("contenter").addEventListener("scroll", () => {
-      if (document.getElementById("contenter").scrollY < "100px") {
-        setArrowScrollButton(true);
-      } else setArrowScrollButton(false);
-    });
-  }, []);
-
   function scrollDown() {
     const element = document.getElementById("contenter");
     element.scrollIntoView({
@@ -27,18 +19,16 @@ const ArrowButton = () => {
   return (
     <div>
       {arrowScrollButton && (
-        <a>
-          <img
-            src={arrow}
-            alt="arrow_down"
-            style={{ width: "2.5rem" }}
-            className="arrowfloat"
-            onClick={() => {
-              scrollDown();
-              arrowShow();
-            }}
-          />
-        </a>
+        <img
+          src={arrow}
+          alt="arrow_down"
+          style={{ width: "3.5rem", marginTop: "-2rem" }}
+          className="arrowfloat"
+          onClick={() => {
+            scrollDown();
+            //   arrowShow();
+          }}
+        />
       )}
     </div>
   );

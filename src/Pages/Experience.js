@@ -74,6 +74,7 @@ const Experience = () => {
               </a>
             </div>
           </div>
+          <ArrowButton />
           <div
             style={{
               margin: "0 auto",
@@ -85,24 +86,27 @@ const Experience = () => {
               style={{
                 margin: "0 auto",
                 display: "block",
-                padding: "5px",
               }}
             >
-              <ArrowButton />
               <h1
                 style={{
                   color: "rgb(204, 0, 255)",
                   filter: "drop-shadow(0px 6px 6px #b3b3b3)",
-                  padding: "10px",
-                  margin: "5px",
+                  padding: "0rem",
                   float: "left",
+                  marginTop: "10rem",
                 }}
               >
                 where i've been
               </h1>
             </div>
           </div>
-          <div className="container" id="contenter" key="city">
+          <div
+            className="container"
+            id="contenter"
+            key="city"
+            style={{ marginTop: "3rem", scrollMarginTop: "8.5rem" }}
+          >
             <div style={{ position: "relative" }} className="text-stuff">
               <br />
               <h2>
@@ -144,7 +148,7 @@ const Experience = () => {
               </a>
             </div>
           </div>
-          <div className="container" key="tcp">
+          <div className="container" key="tcp" style={{ marginTop: "-3rem" }}>
             <div style={{ position: "relative" }} className="text-stuff">
               <br />
               <h2>

@@ -25,11 +25,11 @@ const App = () => {
           {mouseLoader ? (
             <Loading />
           ) : (
-            <div>
-              <div style={{ height: "7rem" }}>
+            <div style={{ flexDirection: "column" }}>
+              <div style={{ height: "7rem", flex: 1 }}>
                 <NavBar />
               </div>
-              <div>
+              <div style={{ flex: 3 }}>
                 <AnimatedRoutes />
               </div>
               <div
@@ -37,6 +37,7 @@ const App = () => {
                   position: "absolute",
                   bottom: "0.5rem",
                   left: "1rem",
+                  flex: 1,
                 }}
               >
                 <Footer />

@@ -9,8 +9,6 @@ const Contact = () => {
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 1 } }}
-      className="scrollbar"
-      style={{ overflowY: "scroll" }}
     >
       <h1>
         <span style={{ color: "#800244" }}>wine </span>and

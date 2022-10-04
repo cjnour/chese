@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import moneris from "../assets/moneris.png";
 import com from "../assets/com.png";
 import tcp from "../assets/tcp.png";
-import arrow from "../assets/arrow.png";
 import ArrowButton from "../Components/ArrowButton";
 import "../styles.css";
 
@@ -14,7 +13,7 @@ const Experience = () => {
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 1 } }}
     >
-      <div className="wrapper scrollbox_delayed">
+      <div className="wrapper scrollbox_delayed" id="wrapper-exp">
         <div className="main-content">
           <div>
             <h1
@@ -123,7 +122,7 @@ const Experience = () => {
                 .
               </h2>
               <h2>
-                there, i worked two different positions,{" "}
+                there, i worked two positions,{" "}
                 <span style={{ backgroundColor: "#EE6930", color: "#bddd46" }}>
                   {" "}
                   Parks Operations
@@ -135,9 +134,11 @@ const Experience = () => {
                 .
               </h2>
               <h2>
-                i gained <span style={{ color: "red" }}>independence</span>,
-                <span style={{ color: "rgb(0, 202, 0)" }}> respect</span>, and
-                skills of <span style={{ color: "blue" }}>labour work</span>.
+                i learned the value of{" "}
+                <span style={{ color: "rgb(204, 0, 255)" }}>independence</span>,
+                <span style={{ color: "rgb(204, 0, 255)" }}> respect</span>, and
+                obtained skills of{" "}
+                <span style={{ color: "rgb(204, 0, 255)" }}>labour work</span>.
               </h2>
               <p>2021-2022</p>
             </div>
@@ -164,8 +165,8 @@ const Experience = () => {
               </h2>
               <h2>
                 there, i worked as a
-                <span style={{ color: "red" }}> barista</span> and a{" "}
-                <span style={{ color: "blue" }}> cook</span>.
+                <span style={{ color: "rgb(204, 0, 255)" }}> barista</span> and
+                a <span style={{ color: "rgb(204, 0, 255)" }}> cook</span>.
               </h2>
               <h2>i had some really interesting customer experiences there.</h2>
               <p>2017-2020</p>

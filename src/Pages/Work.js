@@ -12,7 +12,7 @@ const Work = () => {
       <div>
         <h1 style={{ color: "blue" }}>what i've built</h1>
       </div>
-      <div className="wrapper scrollbox_delayed">
+      <div className="wrapper scrollbox_delayed" id="wrapper-work">
         <div className="main-content">
           <h2>
             my name is <span style={{ color: "red" }}>CJ </span>

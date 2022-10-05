@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import me from "../assets/me.jpg";
+// import me from "../assets/me.jpg";
+import notme from "../assets/notme.jpg";
 import inlinked from "../assets/inlinked.png";
 import gmail from "../assets/gmail.png";
 import mail from "../assets/mail.png";
@@ -71,7 +72,7 @@ const Contact = () => {
         </div>
         <div style={{ margin: "3%" }}></div>
         <div className="pic-stuff">
-          <img src={me} alt="me" width="300" />
+          <img src={notme} alt="notme" width="300" />
         </div>
       </div>
     </motion.div>

@@ -48,12 +48,17 @@ const Home = () => {
             <a
               href="https://www.youtube.com/channel/UC8al7q-s0BWKpeaW3Uvfh4Q"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={yt_logo} alt="youtube" className="youtube" />
             </a>
           </div>
           <div>
-            <a href="https://github.com/cjnour" target="_blank">
+            <a
+              href="https://github.com/cjnour"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={gh_logo} alt="github" className="github" />
             </a>
           </div>
@@ -61,6 +66,7 @@ const Home = () => {
             <a
               href="https://www.linkedin.com/in/cj-nour-3b82681a0/"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={li_logo} alt="inlinked" className="inlinked" />
             </a>

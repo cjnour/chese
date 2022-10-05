@@ -29,12 +29,14 @@ const Contact = () => {
             <a
               href="https://mail.google.com/mail/u/?tab=rm&ogbl#inbox?compose=new"
               target="_blank"
+              rel="noreferrer"
             >
               email
             </a>{" "}
             <a
               href="https://www.linkedin.com/in/cj-nour-3b82681a0/"
               target="_blank"
+              rel="noreferrer"
             >
               linkedin
             </a>

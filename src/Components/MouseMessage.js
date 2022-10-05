@@ -93,6 +93,7 @@ const MouseMessage = (props) => {
             <a
               href="https://drive.google.com/file/d/15S_cuhdPFu3YCpIxcE0hFrM3lQi_USRV/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 src={resume_msg}

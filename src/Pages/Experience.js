@@ -33,6 +33,7 @@ const Experience = () => {
                 <a
                   href="https://www.moneris.com/"
                   target="_blank"
+                  rel="noreferrer"
                   style={{ textDecoration: "none" }}
                 >
                   <span style={{ color: "#00B7C9" }}>Moneris</span>
@@ -68,7 +69,11 @@ const Experience = () => {
             </div>
             <div style={{ margin: "3%" }}></div>
             <div className="pic-stuff" style={{ marginTop: "3.25rem" }}>
-              <a href="https://www.moneris.com/" target="_blank">
+              <a
+                href="https://www.moneris.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={moneris} alt="moneris" className="moneris"></img>
               </a>
             </div>
@@ -113,6 +118,7 @@ const Experience = () => {
                 <a
                   href="https://www.mississauga.ca"
                   target="_blank"
+                  rel="noreferrer"
                   style={{ textDecoration: "none" }}
                 >
                   <span style={{ color: "#0077B6" }}>
@@ -144,7 +150,11 @@ const Experience = () => {
             </div>
             <div style={{ margin: "3%" }}></div>
             <div className="pic-stuff" style={{ marginTop: "4rem" }}>
-              <a href="https://www.mississauga.ca" target="_blank">
+              <a
+                href="https://www.mississauga.ca"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={com} alt="CoM" className="moneris"></img>
               </a>
             </div>
@@ -157,6 +167,7 @@ const Experience = () => {
                 <a
                   href="https://www.thecoldpressery.com/"
                   target="_blank"
+                  rel="noreferrer"
                   style={{ textDecoration: "none" }}
                 >
                   <span style={{ color: "#CFB12A" }}>The Cold Pressery</span>
@@ -173,7 +184,11 @@ const Experience = () => {
             </div>
             <div style={{ margin: "3%" }}></div>
             <div className="pic-stuff">
-              <a href="https://www.thecoldpressery.com/" target="_blank">
+              <a
+                href="https://www.thecoldpressery.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={tcp} alt="tcp" className="moneris"></img>
               </a>
             </div>

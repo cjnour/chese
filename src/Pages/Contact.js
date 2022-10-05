@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import me from "../assets/me.jpg";
 import inlinked from "../assets/inlinked.png";
 import gmail from "../assets/gmail.png";
+import mail from "../assets/mail.png";
 import "../styles.css";
 
 const Contact = () => {
@@ -47,7 +48,15 @@ const Contact = () => {
               style={{ marginRight: "2rem" }}
             >
               <img src={gmail} alt="gmail_logo" className="github" />
-            </a>{" "}
+            </a>
+            <a
+              href="mailto:charbel.nour9@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              style={{ marginRight: "2rem" }}
+            >
+              <img src={mail} alt="mail_icon" className="mail" />
+            </a>
             <a
               href="https://www.linkedin.com/in/cj-nour-3b82681a0/"
               target="_blank"

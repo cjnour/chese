@@ -1,9 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 import me from "../assets/me.jpg";
+import inlinked from "../assets/inlinked.png";
+import gmail from "../assets/gmail.png";
 import "../styles.css";
 
 const Contact = () => {
+  const copier = () => {
+    navigator.clipboard
+      .writeText("txt to wrt")
+      .then(() => {
+        alert("successfully copied");
+      })
+      .catch(() => {
+        alert("something went wrong");
+      });
+  };
+
   return (
     <motion.div
       initial={{ width: 0 }}
@@ -15,7 +28,7 @@ const Contact = () => {
         <span style={{ color: "#F7AA3E" }}> chese</span>?
       </h1>
       <div className="container">
-        <div style={{ position: "relative" }} className="text-stuff">
+        <div className="text-stuff">
           <br />
           <h2>
             whether it's a question, a comment, or you just want to say hi
@@ -25,20 +38,22 @@ const Contact = () => {
             <span style={{ color: "blue" }}>day</span>, any
             <span style={{ color: "green" }}> time</span>.
           </h2>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ marginTop: "5rem" }}>
             <a
               href="https://mail.google.com/mail/u/?tab=rm&ogbl#inbox?compose=new"
+              onClick={copier}
               target="_blank"
               rel="noreferrer"
+              style={{ marginRight: "2rem" }}
             >
-              email
+              <img src={gmail} alt="gmail_logo" className="github" />
             </a>{" "}
             <a
               href="https://www.linkedin.com/in/cj-nour-3b82681a0/"
               target="_blank"
               rel="noreferrer"
             >
-              linkedin
+              <img src={inlinked} alt="linkedin_logo" className="inlinked" />
             </a>
           </div>
           <br />

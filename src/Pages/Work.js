@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import batmobile from "../assets/batmobile.png";
 import pin from "../assets/pinterest.png";
 import logo from "../assets/logo.png";
-
+import peetime from "../assets/peetime.png";
+import curtain from "../assets/curtain.png";
 import "../styles.css";
 
 const Work = () => {
@@ -60,7 +61,12 @@ const Work = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={logo} alt="moneris" className="moneris"></img>
+                <img
+                  src={peetime}
+                  alt="moneris"
+                  className="moneris"
+                  style={{ width: "11rem", marginTop: "-2.5rem" }}
+                ></img>
               </a>
             </div>
           </div>
@@ -101,7 +107,7 @@ const Work = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={logo} alt="smartcurtain" className="moneris"></img>
+                <img src={curtain} alt="smartcurtain" className="moneris"></img>
               </a>
             </div>
           </div>

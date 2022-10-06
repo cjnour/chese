@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import batmobile from "../assets/batmobile.png";
+import pin from "../assets/pinterest.png";
 import logo from "../assets/logo.png";
 
 import "../styles.css";
@@ -180,6 +181,20 @@ const Work = () => {
                 ></img>
               </a>
             </div>
+          </div>
+          <div>
+            <p style={{ color: "blue" }}>s'more work</p>
+            <a
+              href="https://www.pinterest.com/cjnour"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={pin}
+                alt="rc_batmobile"
+                style={{ width: "10rem" }}
+              ></img>
+            </a>
           </div>
         </div>
       </div>

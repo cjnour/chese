@@ -183,7 +183,7 @@ const Work = () => {
             </div>
           </div>
           <div>
-            <p style={{ color: "blue" }}>s'more work</p>
+            <h4 style={{ color: "blue" }}>s'more work</h4>
             <a
               href="https://www.pinterest.com/cjnour"
               target="_blank"
@@ -193,8 +193,12 @@ const Work = () => {
                 src={pin}
                 alt="rc_batmobile"
                 style={{ width: "10rem" }}
+                className="pin"
               ></img>
             </a>
+          </div>
+          <div>
+            <br />
           </div>
         </div>
       </div>

@@ -343,6 +343,16 @@
   animation: mnrotate 1.5s linear infinite;
 }
 
+.pin {
+  width: 10rem;
+  animation: mnfloat 1.5s ease-in-out infinite;
+}
+
+.pin:hover {
+  opacity: 0.8;
+  animation: mnrotate 1.5s linear infinite;
+}
+
 .batmobile {
   width: 20rem;
   animation: mnfloat 1.5s ease-in-out infinite;

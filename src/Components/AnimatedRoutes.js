@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "../Pages/Home";
 import Work from "../Pages/Work";
 import Experience from "../Pages/Experience";
 import Contact from "../Pages/Contact";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import { connect } from "react-redux";
+import { setRoute } from "../Redux/Main/MainActions";
 import "../styles.css";
 
-const AnimatedRoutes = () => {
+const AnimatedRoutes = (props) => {
   const location = useLocation();
+
+  useEffect(() => {
+    props.setRoute(location.pathname.substring(1));
+  }, [location.pathname, props]);
 
   return (
     <AnimatePresence>
@@ -30,4 +36,16 @@ const AnimatedRoutes = () => {
   );
 };
 
-export default AnimatedRoutes;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setRoute: (route) => dispatch(setRoute(route)),
+  };
+};
+
+const mapStateToProps = (state) => {
+  return {
+    route: state.MainReducer.route,
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(AnimatedRoutes);

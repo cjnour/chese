@@ -9,28 +9,12 @@ import { connect } from "react-redux";
 import { setRoute } from "../Redux/Main/MainActions";
 
 const MouseMessage = (props) => {
-  const switchRoute = () => {
-    if (props.route === "") {
-      props.setRoute("work");
-    } else if (props.route === "work") {
-      props.setRoute("experience");
-    } else if (props.route === "experience") {
-      props.setRoute("contact");
-    }
-  };
-
   return (
     <div>
       {props.showMessage && (
         <div>
           {props.route === "" && (
-            <Link
-              className="navitemslink"
-              onClick={() => {
-                switchRoute();
-              }}
-              to={"/work"}
-            >
+            <Link className="navitemslink" to={"/work"}>
               <img
                 src={work_msg}
                 alt="mouse message"
@@ -46,13 +30,7 @@ const MouseMessage = (props) => {
             </Link>
           )}
           {props.route === "work" && (
-            <Link
-              className="navitemslink"
-              onClick={() => {
-                switchRoute();
-              }}
-              to={"/experience"}
-            >
+            <Link className="navitemslink" to={"/experience"}>
               <img
                 src={exp_msg}
                 alt="mouse message"
@@ -68,13 +46,7 @@ const MouseMessage = (props) => {
             </Link>
           )}
           {props.route === "experience" && (
-            <Link
-              className="navitemslink"
-              onClick={() => {
-                switchRoute();
-              }}
-              to={"/contact"}
-            >
+            <Link className="navitemslink" to={"/contact"}>
               <img
                 src={contact_msg}
                 alt="mouse message"

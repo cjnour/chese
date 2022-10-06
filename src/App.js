@@ -4,10 +4,10 @@ import Loading from "./Components/Loading";
 import NavBar from "./Components/NavBar";
 import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./Components/AnimatedRoutes";
-import { Provider } from "react-redux";
-import { store } from "./Redux/Store/ConfigureStore";
+import { connect } from "react-redux";
 import Footer from "./Components/Footer";
 import LilMouse from "./Components/LilMouse";
+import { getLocation } from "./Redux/Main/MainActions";
 
 const App = () => {
   const [mouseLoader, setMouseLoader] = useState(true);
@@ -16,39 +16,43 @@ const App = () => {
     setTimeout(() => {
       setMouseLoader(false);
     }, 1200);
-  });
+  }, []);
 
   return (
-    <Provider store={store}>
-      <div className="App">
-        <Router>
-          {mouseLoader ? (
-            <Loading />
-          ) : (
-            <div style={{ flexDirection: "column" }}>
-              <div style={{ height: "7rem", flex: 1 }}>
-                <NavBar />
-              </div>
-              <div style={{ flex: 3 }}>
-                <AnimatedRoutes />
-              </div>
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: "0.5rem",
-                  left: "1rem",
-                  flex: 1,
-                }}
-              >
-                <Footer />
-                <LilMouse />
-              </div>
+    <div className="App">
+      <Router>
+        {mouseLoader ? (
+          <Loading />
+        ) : (
+          <div style={{ flexDirection: "column" }}>
+            <div style={{ height: "7rem", flex: 1 }}>
+              <NavBar />
             </div>
-          )}
-        </Router>
-      </div>
-    </Provider>
+            <div style={{ flex: 3 }}>
+              <AnimatedRoutes />
+            </div>
+            <div
+              style={{
+                position: "absolute",
+                bottom: "0.5rem",
+                left: "1rem",
+                flex: 1,
+              }}
+            >
+              <Footer />
+              <LilMouse />
+            </div>
+          </div>
+        )}
+      </Router>
+    </div>
   );
 };
 
-export default App;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getLocation: () => dispatch(getLocation()),
+  };
+};
+
+export default connect(mapDispatchToProps)(App);

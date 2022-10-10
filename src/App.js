@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./Components/AnimatedRoutes";
 import Footer from "./Components/Footer";
 import LilMouse from "./Components/LilMouse";
+import "./Components/fonts.css";
 
 const App = () => {
   const [mouseLoader, setMouseLoader] = useState(true);

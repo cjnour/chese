@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Inter Tight", sans-serif;
+  font-family: "Inter Tight", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

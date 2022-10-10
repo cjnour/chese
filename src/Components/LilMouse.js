@@ -22,7 +22,7 @@ const LilMouse = () => {
           style={{
             position: "fixed",
             left: "0",
-            bottom: "-0.5rem",
+            bottom: "-0.4rem",
           }}
         >
           <div className="moveArrow">
@@ -45,7 +45,7 @@ const LilMouse = () => {
               width: "7.3rem",
               position: "fixed",
               right: "12px",
-              bottom: "-0.25rem",
+              bottom: "-0.15rem",
             }}
           />
         </div>

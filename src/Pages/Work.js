@@ -25,7 +25,7 @@ const Work = () => {
             <h1
               className="header"
               style={{
-                color: "blue",
+                color: "#004ed4",
               }}
             >
               what i've created
@@ -34,22 +34,23 @@ const Work = () => {
           <div className="container" key="peetime">
             <div style={{ position: "relative" }} className="text-stuff">
               <h2 className="description">
-                i am inventing a <span style={{ color: "blue" }}>cheap</span>,{" "}
-                <span style={{ color: "blue" }}>open-source</span> solution to{" "}
+                i am inventing a <span style={{ color: "#004ed4" }}>cheap</span>
+                , <span style={{ color: "#004ed4" }}>open-source</span> solution
+                to{" "}
                 <a
                   href="https://www.moneris.com/"
                   target="_blank"
                   rel="noreferrer"
                   style={{ textDecoration: "none" }}
                 >
-                  <span style={{ color: "blue" }}>puppy potty-training</span>
+                  <span style={{ color: "#004ed4" }}>puppy potty-training</span>
                 </a>
                 .
               </h2>
               <h2 className="description">
                 for this, i'm utilizing an{" "}
-                <span style={{ color: "blue" }}>ESP8266-12E</span> module coded
-                in <span style={{ color: "#009298" }}>Arduino</span>.
+                <span style={{ color: "#004ed4" }}>ESP8266-12E</span> module
+                coded in <span style={{ color: "#009298" }}>Arduino</span>.
               </h2>
               <h2 className="description">
                 i'm using{" "}
@@ -80,7 +81,9 @@ const Work = () => {
             <div style={{ position: "relative" }} className="text-stuff">
               <h2 className="description">
                 created a solution for my partner's sleep apnea, an{" "}
-                <span style={{ color: "blue" }}>automated smart curtain</span>{" "}
+                <span style={{ color: "#004ed4" }}>
+                  automated smart curtain
+                </span>{" "}
                 to block{" "}
                 <span style={{ filter: "drop-shadow(0px 0px 8px #FFD32C)" }}>
                   sunlight
@@ -96,8 +99,8 @@ const Work = () => {
               <h2 className="description">
                 implemented <span style={{ color: "#009298" }}>Arduino</span>{" "}
                 code design onto an{" "}
-                <span style={{ color: "blue" }}>ESP8266-12E </span>module to a
-                stepper motor.
+                <span style={{ color: "#004ed4" }}>ESP8266-12E </span>module to
+                a stepper motor.
               </h2>
               <p>2022</p>
             </div>
@@ -123,12 +126,14 @@ const Work = () => {
               <br />
               <h2 className="description">
                 implemented{" "}
-                <span style={{ color: "blue" }}>self-driving algorithms</span>{" "}
+                <span style={{ color: "#004ed4" }}>
+                  self-driving algorithms
+                </span>{" "}
                 on an RC car to navigate through obstacles.
               </h2>
               <h2 className="description">
-                used <span style={{ color: "blue" }}>LiDAR</span> data processed
-                through a{" "}
+                used <span style={{ color: "#004ed4" }}>LiDAR</span> data
+                processed through a{" "}
                 <span style={{ color: "#94CF43" }}>NVIDIA Jetson Nano</span>.
               </h2>
               <h2 className="description">
@@ -164,10 +169,10 @@ const Work = () => {
                 phases.
               </h2>
               <h2 className="description">
-                obtained skills in <span style={{ color: "blue" }}>CAD</span>,{" "}
-                <span style={{ color: "blue" }}>hardware</span>,{" "}
-                <span style={{ color: "blue" }}>electrical work</span>, and{" "}
-                <span style={{ color: "blue" }}>physics</span>.
+                obtained skills in <span style={{ color: "#004ed4" }}>CAD</span>
+                , <span style={{ color: "#004ed4" }}>hardware</span>,{" "}
+                <span style={{ color: "#004ed4" }}>electrical work</span>, and{" "}
+                <span style={{ color: "#004ed4" }}>physics</span>.
               </h2>
               <p>2019</p>
             </div>
@@ -183,7 +188,7 @@ const Work = () => {
             </div>
           </div>
           <div>
-            <h4 style={{ color: "blue" }}>s'more work</h4>
+            <h4 style={{ color: "#004ed4" }}>s'more work</h4>
             <a
               href="https://www.pinterest.com/cjnour"
               target="_blank"

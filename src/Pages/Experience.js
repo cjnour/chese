@@ -23,7 +23,7 @@ const Experience = () => {
             <h1
               className="header"
               style={{
-                color: "rgb(204, 0, 255)",
+                color: "#ab00d6",
               }}
             >
               what i'm doing
@@ -93,7 +93,7 @@ const Experience = () => {
             <h1
               className="header"
               style={{
-                color: "rgb(204, 0, 255)",
+                color: "#ab00d6",
                 padding: "0rem",
                 float: "left",
                 marginTop: "10rem",
@@ -138,10 +138,9 @@ const Experience = () => {
               </h2>
               <h2 className="description">
                 i learned the value of{" "}
-                <span style={{ color: "rgb(204, 0, 255)" }}>independence</span>,
-                <span style={{ color: "rgb(204, 0, 255)" }}> respect</span>, and
-                obtained skills of{" "}
-                <span style={{ color: "rgb(204, 0, 255)" }}>labour work</span>.
+                <span style={{ color: "#ab00d6" }}>independence</span>,
+                <span style={{ color: "#ab00d6" }}> respect</span>, and obtained
+                skills of <span style={{ color: "#ab00d6" }}>labour work</span>.
               </h2>
               <p>2021-2022</p>
             </div>
@@ -173,8 +172,8 @@ const Experience = () => {
               </h2>
               <h2 className="description">
                 there, i worked as a
-                <span style={{ color: "rgb(204, 0, 255)" }}> barista</span> and
-                a <span style={{ color: "rgb(204, 0, 255)" }}> cook</span>.
+                <span style={{ color: "#ab00d6" }}> barista</span> and a{" "}
+                <span style={{ color: "#ab00d6" }}> cook</span>.
               </h2>
               <h2 className="description">
                 i had some really interesting customer experiences there.

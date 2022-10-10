@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import me from "../assets/me.jpg";
 // import notme from "../assets/notme.jpg";
 // import gus from "../assets/gus.png";
-import inlinked from "../assets/inlinked.png";
-import gmail from "../assets/gmail.png";
+// import gmail from "../assets/gmail.png";
 import mail from "../assets/mail.png";
+import inlinked from "../assets/inlinked.png";
 import "../styles.css";
 
 const Contact = () => {

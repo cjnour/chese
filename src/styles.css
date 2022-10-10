@@ -398,7 +398,16 @@
 
 .batmobile:hover {
   opacity: 0.8;
+  animation: mnrotate 1.5s linear infinite;
+}
 
+.autocar {
+  width: 18rem;
+  animation: mnfloat 1.5s ease-in-out infinite;
+}
+
+.autocar:hover {
+  opacity: 0.8;
   animation: mnrotate 1.5s linear infinite;
 }
 
@@ -569,6 +578,9 @@
   .batmobile {
     width: 15rem;
   }
+  .autocar {
+    width: 14rem;
+  }
   .pin {
     width: 8rem;
   }
@@ -605,6 +617,9 @@
   .batmobile {
     width: 11rem;
   }
+  .autocar {
+    width: 10rem;
+  }
   .mouse_msg {
     width: 12rem;
   }
@@ -635,6 +650,9 @@
   .batmobile {
     width: 9rem;
   }
+  .autocar {
+    width: 8rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -648,6 +666,9 @@
     width: 6rem;
   }
   .batmobile {
+    width: 6rem;
+  }
+  .autocar {
     width: 6rem;
   }
   .pin {

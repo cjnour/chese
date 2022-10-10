@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import batmobile from "../assets/batmobile.png";
 import pin from "../assets/pinterest.png";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
 import peetime from "../assets/peetime.png";
 import curtain from "../assets/curtain.png";
+import car from "../assets/auto_car.png";
+import batmobile from "../assets/batmobile.png";
 import "../styles.css";
 
 const Work = () => {
@@ -148,7 +149,7 @@ const Work = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={logo} alt="rc_car" className="moneris"></img>
+                <img src={car} alt="rc_car" className="autocar"></img>
               </a>
             </div>
           </div>

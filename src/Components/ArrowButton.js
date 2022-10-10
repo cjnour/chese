@@ -15,7 +15,6 @@ const ArrowButton = () => {
       <img
         src={arrow}
         alt="arrow_down"
-        style={{ width: "3.5rem", marginTop: "-2rem" }}
         className="arrowfloat"
         onClick={() => {
           scrollDown();

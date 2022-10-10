@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Home from "../Pages/Home";
 import Work from "../Pages/Work";
 import Experience from "../Pages/Experience";
@@ -11,10 +11,15 @@ import "../styles.css";
 
 const AnimatedRoutes = (props) => {
   const location = useLocation();
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     props.setRoute(location.pathname.substring(1));
   }, [location.pathname, props]);
+
+  const newClick = () => {
+    setShow(false);
+  };
 
   return (
     <AnimatePresence>

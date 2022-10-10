@@ -20,12 +20,6 @@ const MouseMessage = (props) => {
                 alt="mouse message"
                 id="work_msg"
                 className="mouse_msg"
-                style={{
-                  width: "15rem",
-                  position: "fixed",
-                  right: "1rem",
-                  bottom: "1.5rem",
-                }}
               />
             </Link>
           )}
@@ -36,12 +30,6 @@ const MouseMessage = (props) => {
                 alt="mouse message"
                 id="exp_msg"
                 className="mouse_msg"
-                style={{
-                  width: "15rem",
-                  position: "fixed",
-                  right: "1rem",
-                  bottom: "1.5rem",
-                }}
               />
             </Link>
           )}
@@ -52,12 +40,6 @@ const MouseMessage = (props) => {
                 alt="mouse message"
                 id="contact_msg"
                 className="mouse_msg"
-                style={{
-                  width: "15rem",
-                  position: "fixed",
-                  right: "1rem",
-                  bottom: "1.5rem",
-                }}
               />
             </Link>
           )}
@@ -72,12 +54,6 @@ const MouseMessage = (props) => {
                 alt="mouse message"
                 id="contact_msg"
                 className="mouse_msg"
-                style={{
-                  width: "15rem",
-                  position: "fixed",
-                  right: "1rem",
-                  bottom: "1.5rem",
-                }}
               />
             </a>
           )}

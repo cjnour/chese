@@ -14,7 +14,7 @@ const NavBar = (props) => {
         </a>
       </div>
       <div className="navbar">
-        <Link to="/" className="navitemslink">
+        <Link to="/" className="navitemshome">
           <h3
             className="home"
             onClick={() => {
@@ -24,7 +24,7 @@ const NavBar = (props) => {
             home
           </h3>
         </Link>
-        <Link to="work" className="navitemslink">
+        <Link to="work" className="navitemswork">
           <h3
             className="work"
             onClick={() => {
@@ -34,7 +34,7 @@ const NavBar = (props) => {
             work
           </h3>
         </Link>
-        <Link to="experience" className="navitemslink">
+        <Link to="experience" className="navitemsexp">
           <h3
             className="exp"
             onClick={() => {
@@ -44,7 +44,7 @@ const NavBar = (props) => {
             experience
           </h3>
         </Link>
-        <Link to="contact" className="navitemslink">
+        <Link to="contact" className="navitemscon">
           <h3
             className="con"
             onClick={() => {

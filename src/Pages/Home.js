@@ -9,26 +9,20 @@ import "../styles.css";
 const Home = () => {
   return (
     <motion.div
-      initial={{ width: "0%" }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 1 } }}
+      initial={{ opacity: 1, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, transition: { duration: 1 } }}
     >
-      <div style={{ marginTop: "6rem" }}>
+      <div style={{ marginTop: "6rem", marginBottom: "20rem" }}>
         <div>
           <img src={welcome} alt="welcome" style={{ width: "8rem" }} />
           <br />
           <br />
-          <h2>
-            my name is{" "}
-            <span
-              // className="wordglow"
-              style={{ color: "red" }}
-            >
-              CJ{" "}
-            </span>
+          <h2 className="description">
+            my name is <span style={{ color: "red" }}>CJ </span>
             <span style={{ color: "blue" }}>Nour</span>.
           </h2>
-          <h2>
+          <h2 className="description">
             i'm an aspiring{" "}
             <span style={{ color: "rgb(204, 0, 255)" }}>engineer </span> with
             passions for{" "}
@@ -36,7 +30,7 @@ const Home = () => {
             <span style={{ color: "orange" }}> hardware</span>, and{" "}
             <span style={{ color: "red" }}>learning</span>.
           </h2>
-          <h2>
+          <h2 className="description">
             i <span style={{ color: "red" }}>specialize</span> in delivering
             <span style={{ color: "blue" }}> high</span>-
             <span style={{ color: "rgb(204, 0, 255)" }}>tech </span>{" "}

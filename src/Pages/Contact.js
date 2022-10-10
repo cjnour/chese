@@ -22,26 +22,27 @@ const Contact = () => {
 
   return (
     <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 1 } }}
+      initial={{ opacity: 1, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+      style={{ marginBottom: "20rem" }}
     >
-      <h1>
+      <h1 className="header">
         <span style={{ color: "#800244" }}>wine </span>and
         <span style={{ color: "#F7AA3E" }}> chese</span>?
       </h1>
       <div className="container">
         <div className="text-stuff">
           <br />
-          <h2>
+          <h2 className="description">
             whether it's a question, a comment, or you just want to say hi
           </h2>
-          <h2>
+          <h2 className="description">
             i'm <span style={{ color: "red" }}>open</span> to chat any{" "}
             <span style={{ color: "blue" }}>day</span>, any
             <span style={{ color: "green" }}> time</span>.
           </h2>
-          <div style={{ marginTop: "5rem" }}>
+          <div className="contact-socials">
             <a
               href="https://mail.google.com/mail/u/?tab=rm&ogbl#inbox?compose=new"
               onClick={copier}
@@ -49,7 +50,7 @@ const Contact = () => {
               rel="noreferrer"
               style={{ marginRight: "2rem" }}
             >
-              <img src={gmail} alt="gmail_logo" className="github" />
+              <img src={gmail} alt="gmail_logo" className="gmail" />
             </a>
             <a
               href="mailto:charbel.nour9@gmail.com"
@@ -64,7 +65,11 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={inlinked} alt="linkedin_logo" className="inlinked" />
+              <img
+                src={inlinked}
+                alt="linkedin_logo"
+                className="inlinked-contact"
+              />
             </a>
           </div>
           <br />
@@ -73,7 +78,7 @@ const Contact = () => {
         </div>
         <div style={{ margin: "3%" }}></div>
         <div className="pic-stuff">
-          <img src={gus} alt="notme" width="300" />
+          <img src={gus} alt="notme" className="picofme" />
         </div>
       </div>
     </motion.div>

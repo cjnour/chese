@@ -10,17 +10,21 @@ import "../styles.css";
 const Work = () => {
   return (
     <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 1 } }}
+      initial={{ opacity: 1, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, transition: { duration: 1 } }}
     >
-      <div className="wrapper scrollbox_delayed" id="wrapper-work">
+      <div
+        className="wrapper scrollbox_delayed"
+        id="wrapper-work"
+        style={{ marginBottom: "20rem" }}
+      >
         <div className="main-content">
           <div>
             <h1
+              className="header"
               style={{
                 color: "blue",
-                filter: "drop-shadow(0px 6px 6px #b3b3b3)",
               }}
             >
               what i've created
@@ -28,7 +32,7 @@ const Work = () => {
           </div>
           <div className="container" key="peetime">
             <div style={{ position: "relative" }} className="text-stuff">
-              <h2>
+              <h2 className="description">
                 i am inventing a <span style={{ color: "blue" }}>cheap</span>,{" "}
                 <span style={{ color: "blue" }}>open-source</span> solution to{" "}
                 <a
@@ -41,12 +45,12 @@ const Work = () => {
                 </a>
                 .
               </h2>
-              <h2>
+              <h2 className="description">
                 for this, i'm utilizing an{" "}
                 <span style={{ color: "blue" }}>ESP8266-12E</span> module coded
                 in <span style={{ color: "#009298" }}>Arduino</span>.
               </h2>
-              <h2>
+              <h2 className="description">
                 i'm using{" "}
                 <span style={{ backgroundColor: "#F7DF1E" }}> JavaScript</span>{" "}
                 and <span style={{ color: "#53c0db" }}>React Native</span>, as
@@ -65,7 +69,7 @@ const Work = () => {
                   src={peetime}
                   alt="moneris"
                   className="moneris"
-                  style={{ width: "11rem", marginTop: "-2.5rem" }}
+                  style={{ marginTop: "-2.5rem" }}
                 ></img>
               </a>
             </div>
@@ -77,7 +81,7 @@ const Work = () => {
             style={{ marginTop: "3rem", scrollMarginTop: "8.5rem" }}
           >
             <div style={{ position: "relative" }} className="text-stuff">
-              <h2>
+              <h2 className="description">
                 created a solution for my partner's sleep apnea, an{" "}
                 <span style={{ color: "blue" }}>automated smart curtain</span>{" "}
                 to block{" "}
@@ -86,13 +90,13 @@ const Work = () => {
                 </span>
                 .
               </h2>
-              <h2>
+              <h2 className="description">
                 developed an app via{" "}
                 <span style={{ color: "#53c0db" }}>React Native</span>, backend
                 hosted on <span style={{ color: "#FF9900" }}>AWS IoT</span>{" "}
                 services.
               </h2>
-              <h2>
+              <h2 className="description">
                 implemented <span style={{ color: "#009298" }}>Arduino</span>{" "}
                 code design onto an{" "}
                 <span style={{ color: "blue" }}>ESP8266-12E </span>module to a
@@ -107,7 +111,12 @@ const Work = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={curtain} alt="smartcurtain" className="moneris"></img>
+                <img
+                  src={curtain}
+                  alt="smartcurtain"
+                  className="moneris"
+                  style={{ marginTop: "-3rem" }}
+                ></img>
               </a>
             </div>
           </div>
@@ -115,21 +124,21 @@ const Work = () => {
             className="container"
             id="contenter"
             key="rccar"
-            style={{ marginTop: "3rem", scrollMarginTop: "8.5rem" }}
+            style={{ scrollMarginTop: "8.5rem" }}
           >
             <div style={{ position: "relative" }} className="text-stuff">
               <br />
-              <h2>
+              <h2 className="description">
                 implemented{" "}
                 <span style={{ color: "blue" }}>self-driving algorithms</span>{" "}
                 on an RC car to navigate through obstacles.
               </h2>
-              <h2>
+              <h2 className="description">
                 used <span style={{ color: "blue" }}>LiDAR</span> data processed
                 through a{" "}
                 <span style={{ color: "#94CF43" }}>NVIDIA Jetson Nano</span>.
               </h2>
-              <h2>
+              <h2 className="description">
                 coded in <span style={{ color: "#00589D" }}>C</span> and{" "}
                 <span style={{ backgroundColor: "#FFE05E", color: "#3975A5" }}>
                   {" "}
@@ -151,21 +160,17 @@ const Work = () => {
               </a>
             </div>
           </div>
-          <div
-            className="container"
-            key="rcbatmobile"
-            style={{ marginTop: "-3rem" }}
-          >
+          <div className="container" key="rcbatmobile">
             <div style={{ position: "relative" }} className="text-stuff">
-              <h2>
+              <h2 className="description">
                 designed and constructed an RC replica of the 1989{" "}
                 <span style={{ backgroundColor: "#F7DF1E" }}> Batmobile</span>.
               </h2>
-              <h2>
+              <h2 className="description">
                 challenges of chassis strength were encountered in the testing
                 phases.
               </h2>
-              <h2>
+              <h2 className="description">
                 obtained skills in <span style={{ color: "blue" }}>CAD</span>,{" "}
                 <span style={{ color: "blue" }}>hardware</span>,{" "}
                 <span style={{ color: "blue" }}>electrical work</span>, and{" "}
@@ -195,12 +200,7 @@ const Work = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src={pin}
-                alt="rc_batmobile"
-                style={{ width: "10rem" }}
-                className="pin"
-              ></img>
+              <img src={pin} alt="pinterest" className="pin"></img>
             </a>
           </div>
           <div>

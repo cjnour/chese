@@ -9,17 +9,21 @@ import "../styles.css";
 const Experience = () => {
   return (
     <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 1 } }}
+      initial={{ opacity: 1, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, transition: { duration: 1 } }}
     >
-      <div className="wrapper scrollbox_delayed" id="wrapper-exp">
+      <div
+        className="wrapper scrollbox_delayed"
+        id="wrapper-exp"
+        style={{ marginBottom: "20rem" }}
+      >
         <div className="main-content">
           <div>
             <h1
+              className="header"
               style={{
                 color: "rgb(204, 0, 255)",
-                filter: "drop-shadow(0px 6px 6px #b3b3b3)",
               }}
             >
               what i'm doing
@@ -28,7 +32,7 @@ const Experience = () => {
           <div className="container" key="moneris">
             <div style={{ position: "relative" }} className="text-stuff">
               <br />
-              <h2>
+              <h2 className="description">
                 i am currently working at{" "}
                 <a
                   href="https://www.moneris.com/"
@@ -40,7 +44,7 @@ const Experience = () => {
                 </a>
                 .
               </h2>
-              <h2>
+              <h2 className="description">
                 here, i'm using languages like{" "}
                 <span style={{ backgroundColor: "#F7DF1E" }}> JavaScript</span>{" "}
                 and
@@ -59,7 +63,7 @@ const Experience = () => {
                 </span>
                 applications.
               </h2>
-              <h2>
+              <h2 className="description">
                 i've also been using frameworks like{" "}
                 <span style={{ color: "#53c0db" }}>React</span>,{" "}
                 <span style={{ color: "#764ABC" }}>Redux</span>, and{" "}
@@ -86,24 +90,17 @@ const Experience = () => {
               overflow: "hidden",
             }}
           >
-            <div
+            <h1
+              className="header"
               style={{
-                margin: "0 auto",
-                display: "block",
+                color: "rgb(204, 0, 255)",
+                padding: "0rem",
+                float: "left",
+                marginTop: "10rem",
               }}
             >
-              <h1
-                style={{
-                  color: "rgb(204, 0, 255)",
-                  filter: "drop-shadow(0px 6px 6px #b3b3b3)",
-                  padding: "0rem",
-                  float: "left",
-                  marginTop: "10rem",
-                }}
-              >
-                where i've been
-              </h1>
-            </div>
+              where i've been
+            </h1>
           </div>
           <div
             className="container"
@@ -113,7 +110,7 @@ const Experience = () => {
           >
             <div style={{ position: "relative" }} className="text-stuff">
               <br />
-              <h2>
+              <h2 className="description">
                 i used to work for{" "}
                 <a
                   href="https://www.mississauga.ca"
@@ -127,7 +124,7 @@ const Experience = () => {
                 </a>
                 .
               </h2>
-              <h2>
+              <h2 className="description">
                 there, i worked two positions,{" "}
                 <span style={{ backgroundColor: "#EE6930", color: "#bddd46" }}>
                   {" "}
@@ -139,7 +136,7 @@ const Experience = () => {
                 </span>
                 .
               </h2>
-              <h2>
+              <h2 className="description">
                 i learned the value of{" "}
                 <span style={{ color: "rgb(204, 0, 255)" }}>independence</span>,
                 <span style={{ color: "rgb(204, 0, 255)" }}> respect</span>, and
@@ -162,7 +159,7 @@ const Experience = () => {
           <div className="container" key="tcp" style={{ marginTop: "-3rem" }}>
             <div style={{ position: "relative" }} className="text-stuff">
               <br />
-              <h2>
+              <h2 className="description">
                 i first worked at{" "}
                 <a
                   href="https://www.thecoldpressery.com/"
@@ -174,12 +171,14 @@ const Experience = () => {
                 </a>
                 .
               </h2>
-              <h2>
+              <h2 className="description">
                 there, i worked as a
                 <span style={{ color: "rgb(204, 0, 255)" }}> barista</span> and
                 a <span style={{ color: "rgb(204, 0, 255)" }}> cook</span>.
               </h2>
-              <h2>i had some really interesting customer experiences there.</h2>
+              <h2 className="description">
+                i had some really interesting customer experiences there.
+              </h2>
               <p>2017-2020</p>
             </div>
             <div style={{ margin: "3%" }}></div>

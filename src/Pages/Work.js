@@ -37,15 +37,7 @@ const Work = () => {
                 i am inventing a <span style={{ color: "#004ed4" }}>cheap</span>
                 , <span style={{ color: "#004ed4" }}>open-source</span> solution
                 to{" "}
-                <a
-                  href="https://www.moneris.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ textDecoration: "none" }}
-                >
-                  <span style={{ color: "#004ed4" }}>puppy potty-training</span>
-                </a>
-                .
+                <span style={{ color: "#004ed4" }}>puppy potty-training</span>.
               </h2>
               <h2 className="description">
                 for this, i'm utilizing an{" "}

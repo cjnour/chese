@@ -733,4 +733,11 @@
   .navitemscon {
     font-size: 0.75rem;
   }
+  .picofme {
+    width: 10rem;
+    margin-top: 2rem;
+  }
+  .contact-socials {
+    margin-left: 1.75rem;
+  }
 }

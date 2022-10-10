@@ -4,10 +4,8 @@ import Loading from "./Components/Loading";
 import NavBar from "./Components/NavBar";
 import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./Components/AnimatedRoutes";
-import { connect } from "react-redux";
 import Footer from "./Components/Footer";
 import LilMouse from "./Components/LilMouse";
-import { getLocation } from "./Redux/Main/MainActions";
 
 const App = () => {
   const [mouseLoader, setMouseLoader] = useState(true);
@@ -49,10 +47,4 @@ const App = () => {
   );
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    getLocation: () => dispatch(getLocation()),
-  };
-};
-
-export default connect(mapDispatchToProps)(App);
+export default App;

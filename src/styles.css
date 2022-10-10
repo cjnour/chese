@@ -277,12 +277,21 @@
   }
 }
 
+@keyframes msgappear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .mouse_msg {
   width: 15rem;
   position: fixed;
   right: 1rem;
   bottom: 1.5rem;
-  animation: float_msg 1.5s ease-in-out infinite, msgappear 1s ease-in-out 1;
+  animation: float_msg 1.5s ease-in-out infinite, msgappear 3s ease-in-out 1;
 }
 
 .mouse_msg:hover {

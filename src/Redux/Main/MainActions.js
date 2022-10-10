@@ -7,10 +7,3 @@ export const setRoute = (route) => {
     payload: route,
   };
 };
-
-export const getLocation = () => {
-  return (dispatch) => {
-    dispatch(setRoute(useLocation().pathname));
-    console.log("Got location.");
-  };
-};

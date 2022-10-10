@@ -9,20 +9,20 @@ import mail from "../assets/mail.png";
 import "../styles.css";
 
 const Contact = () => {
-  function updateClipboard() {
-    navigator.clipboard.writeText("poop").then(
-      () => {
-        alert("success");
-      },
-      () => {
-        alert("failed");
-      }
-    );
-  }
+  // function updateClipboard() {
+  //   navigator.clipboard.writeText("poop").then(
+  //     () => {
+  //       alert("success");
+  //     },
+  //     () => {
+  //       alert("failed");
+  //     }
+  //   );
+  // }
 
   return (
     <motion.div
-      initial={{ opacity: 1, scale: 0 }}
+      initial={{ opacity: 1 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, transition: { duration: 1 } }}
       style={{ marginBottom: "20rem" }}

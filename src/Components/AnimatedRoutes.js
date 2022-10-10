@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Home from "../Pages/Home";
 import Work from "../Pages/Work";
 import Experience from "../Pages/Experience";
 import Contact from "../Pages/Contact";
+import NotYet from "../Pages/NotYet";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { connect } from "react-redux";
@@ -11,15 +12,10 @@ import "../styles.css";
 
 const AnimatedRoutes = (props) => {
   const location = useLocation();
-  const [show, setShow] = useState(false);
 
   useEffect(() => {
     props.setRoute(location.pathname.substring(1));
   }, [location.pathname, props]);
-
-  const newClick = () => {
-    setShow(false);
-  };
 
   return (
     <AnimatePresence>
@@ -35,6 +31,9 @@ const AnimatedRoutes = (props) => {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/notyet">
+          <NotYet />
         </Route>
       </Switch>
     </AnimatePresence>

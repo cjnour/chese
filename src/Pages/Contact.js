@@ -1,24 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import me from "../assets/me.jpg";
+import me from "../assets/me.jpg";
 // import notme from "../assets/notme.jpg";
-import gus from "../assets/gus.png";
+// import gus from "../assets/gus.png";
 import inlinked from "../assets/inlinked.png";
 import gmail from "../assets/gmail.png";
 import mail from "../assets/mail.png";
 import "../styles.css";
 
 const Contact = () => {
-  const copier = () => {
-    navigator.clipboard
-      .writeText("txt to wrt")
-      .then(() => {
-        alert("successfully copied");
-      })
-      .catch(() => {
-        alert("something went wrong");
-      });
-  };
+  function updateClipboard() {
+    navigator.clipboard.writeText("poop").then(
+      () => {
+        alert("success");
+      },
+      () => {
+        alert("failed");
+      }
+    );
+  }
 
   return (
     <motion.div
@@ -43,15 +43,14 @@ const Contact = () => {
             <span style={{ color: "green" }}> time</span>.
           </h2>
           <div className="contact-socials">
-            <a
+            {/* <a
               href="https://mail.google.com/mail/u/?tab=rm&ogbl#inbox?compose=new"
-              onClick={copier}
               target="_blank"
               rel="noreferrer"
               style={{ marginRight: "2rem" }}
             >
               <img src={gmail} alt="gmail_logo" className="gmail" />
-            </a>
+            </a> */}
             <a
               href="mailto:charbel.nour9@gmail.com"
               target="_blank"
@@ -78,7 +77,7 @@ const Contact = () => {
         </div>
         <div style={{ margin: "3%" }}></div>
         <div className="pic-stuff">
-          <img src={gus} alt="notme" className="picofme" />
+          <img src={me} alt="notme" className="picofme" />
         </div>
       </div>
     </motion.div>

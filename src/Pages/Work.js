@@ -60,11 +60,7 @@ const Work = () => {
             </div>
             <div style={{ margin: "3%" }}></div>
             <div className="pic-stuff" style={{ marginTop: "3.25rem" }}>
-              <a
-                href="https://www.moneris.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="/notyet">
                 <img
                   src={peetime}
                   alt="moneris"
@@ -106,11 +102,7 @@ const Work = () => {
             </div>
             <div style={{ margin: "3%" }}></div>
             <div className="pic-stuff" style={{ marginTop: "4rem" }}>
-              <a
-                href="https://www.mississauga.ca"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="/notyet">
                 <img
                   src={curtain}
                   alt="smartcurtain"
@@ -152,7 +144,7 @@ const Work = () => {
             <div style={{ margin: "3%" }}></div>
             <div className="pic-stuff" style={{ marginTop: "4rem" }}>
               <a
-                href="https://www.mississauga.ca"
+                href="https://youtu.be/vbRwVFSEvzs"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -180,11 +172,7 @@ const Work = () => {
             </div>
             <div style={{ margin: "3%" }}></div>
             <div className="pic-stuff">
-              <a
-                href="https://www.thecoldpressery.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="/notyet">
                 <img
                   src={batmobile}
                   alt="rc_batmobile"

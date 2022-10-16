@@ -52,7 +52,7 @@
 }
 
 .con:hover {
-  color: rgba(0, 202, 0, 0.493);
+  color: #009e0070;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */

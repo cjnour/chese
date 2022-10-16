@@ -50,17 +50,7 @@ const Experience = () => {
                 and
                 <span style={{ color: "#E54C21" }}> HTML</span>/
                 <span style={{ color: "#264DE4" }}>CSS</span> to develop
-                <span className="beautiful">
-                  <span style={{ color: "red" }}> b</span>
-                  <span style={{ color: "blue" }}>e</span>
-                  <span style={{ color: "#F7DF1E" }}>a</span>
-                  <span style={{ color: "rgb(0, 202, 0)" }}>u</span>
-                  <span style={{ color: "rgb(204, 0, 255)" }}>t</span>
-                  <span style={{ color: "red" }}>i</span>
-                  <span style={{ color: "blue" }}>f</span>
-                  <span style={{ color: "#F7DF1E" }}>u</span>
-                  <span style={{ color: "rgb(0, 202, 0)" }}>l </span>
-                </span>
+                <span style={{ color: "#ab00d6" }}> beautiful </span>
                 applications.
               </h2>
               <h2 className="description">

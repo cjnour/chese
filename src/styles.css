@@ -44,7 +44,7 @@
 }
 
 .con {
-  color: rgb(0, 202, 0);
+  color: #009e00;
   width: 3.9rem;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -167,16 +167,19 @@
 .navitemshome {
   text-decoration: none;
   height: 0px;
+  /* margin-right: 10px; */
 }
 
 .navitemswork {
   text-decoration: none;
   height: 0px;
+  /* margin-right: 10px; */
 }
 
 .navitemsexp {
   text-decoration: none;
   height: 0px;
+  /* margin-right: 10px; */
 }
 
 .navitemscon {

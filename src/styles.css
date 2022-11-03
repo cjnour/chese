@@ -70,12 +70,23 @@
   float: left;
   margin-left: 4%;
   margin-top: 1rem;
-  width: 6rem;
+  width: 9rem;
 }
 
 .cheselogo:hover {
   opacity: 0.8;
 }
+
+/* .chesehover {
+  float: left;
+  margin-left: 4%;
+  margin-top: 1rem;
+  width: 6rem;
+}
+
+.chesehover:hover {
+  opacity: 0.8;
+} */
 
 .moveArrow {
   animation-name: mousemove;

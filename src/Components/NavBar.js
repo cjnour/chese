@@ -1,5 +1,6 @@
 import React from "react";
-import chese_logo from "../assets/chese_wback.png";
+// import chese_logo from "../assets/chese_wback.png";
+import chese_hover from "../assets/chese_wmouse.png";
 import { Link } from "react-router-dom";
 import "../styles.css";
 import { connect } from "react-redux";
@@ -10,7 +11,7 @@ const NavBar = (props) => {
     <div>
       <div>
         <a href="/">
-          <img src={chese_logo} alt="chese" className="cheselogo" />
+          <img src={chese_hover} alt="chese" className="cheselogo" />
         </a>
       </div>
       <div className="navbar">

@@ -1,5 +1,4 @@
 import React from "react";
-// import chese_logo from "../assets/chese_wback.png";
 import chese_hover from "../assets/chese_wmouse.png";
 import { Link } from "react-router-dom";
 import "../styles.css";

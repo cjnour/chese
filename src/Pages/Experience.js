@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import moneris from "../assets/moneris.png";
+import tesla from "../assets/tesla.png";
 import com from "../assets/com.png";
 import tcp from "../assets/tcp.png";
 import ArrowButton from "../Components/ArrowButton";
@@ -29,50 +30,53 @@ const Experience = () => {
               what i'm doing
             </h1>
           </div>
-          <div className="container" key="moneris">
+
+          <div className="container" key="tesla-c">
             <div style={{ position: "relative" }} className="text-stuff">
               <br />
               <h2 className="description">
-                i am currently working at{" "}
+                i'm in my second term at{" "}
                 <a
-                  href="https://www.moneris.com/"
+                  href="https://www.tesla.com/"
                   target="_blank"
                   rel="noreferrer"
                   style={{ textDecoration: "none" }}
                 >
-                  <span style={{ color: "#00B7C9" }}>Moneris</span>
+                  <span style={{ color: "#E31937" }}>Tesla</span>
                 </a>
                 .
               </h2>
               <h2 className="description">
-                here, i'm using languages like{" "}
-                <span style={{ backgroundColor: "#F7DF1E" }}> JavaScript</span>{" "}
-                and
-                <span style={{ color: "#E54C21" }}> HTML</span>/
-                <span style={{ color: "#264DE4" }}>CSS</span> to develop
-                <span style={{ color: "#ab00d6" }}> beautiful </span>
-                applications.
+                here, i'm programming{" "}
+                <span style={{ color: "#007a78" }}>PLCs </span>
+                and <span style={{ color: "#007a78" }}>IPCs </span>to interact
+                with <span style={{ color: "#007a78" }}>VFDs</span>,{" "}
+                <span style={{ backgroundColor: "#F7DF1E" }}>
+                  Safety Devices
+                </span>
+                , and other devices across multiple{" "}
+                <span style={{ color: "#058210" }}>million-dollar</span>{" "}
+                machines.{" "}
               </h2>
               <h2 className="description">
-                i've also been using frameworks like{" "}
-                <span style={{ color: "#53c0db" }}>React</span>,{" "}
-                <span style={{ color: "#764ABC" }}>Redux</span>, and{" "}
-                <span style={{ color: "#007BF7" }}>Material-UI</span>.
+                i've also been developing a maintenance issue using{" "}
+                <span style={{ backgroundColor: "#00c7c4" }}>
+                  RFID technology
+                </span>
+                .
               </h2>
-              <p>2022-present</p>
+              <p>2024-present</p>
             </div>
             <div style={{ margin: "3%" }}></div>
             <div className="pic-stuff" style={{ marginTop: "3.25rem" }}>
-              <a
-                href="https://www.moneris.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={moneris} alt="moneris" className="moneris"></img>
+              <a href="https://www.tesla.com/" target="_blank" rel="noreferrer">
+                <img src={tesla} alt="Tesla" className="moneris"></img>
               </a>
             </div>
           </div>
+
           <ArrowButton />
+
           <div
             style={{
               margin: "0 auto",
@@ -91,6 +95,86 @@ const Experience = () => {
             >
               where i've been
             </h1>
+          </div>
+          <div className="container" key="tesla-mp">
+            <div style={{ position: "relative" }} className="text-stuff">
+              <br />
+              <h2 className="description">
+                in my first term at{" "}
+                <a
+                  href="https://www.tesla.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span style={{ color: "#E31937" }}>Tesla</span>
+                </a>
+                ,
+              </h2>
+              <h2 className="description">
+                there, i developed{" "}
+                <span style={{ color: "#007BF7" }}>automation</span> tools that{" "}
+                <span style={{ color: "#ab00d6" }}> significantly </span>{" "}
+                improved inventory workflow.
+              </h2>
+              <h2 className="description">
+                i also managed inventory{" "}
+                <span style={{ color: "#ab00d6" }}> process </span> and{" "}
+                <span style={{ color: "#ab00d6" }}> flow </span> across multiple{" "}
+                <span style={{ color: "#058210" }}>million-dollar</span>{" "}
+                projects.
+              </h2>
+              <p>2023</p>
+            </div>
+            <div style={{ margin: "3%" }}></div>
+            <div className="pic-stuff" style={{ marginTop: "3.25rem" }}>
+              <a href="https://www.tesla.com/" target="_blank" rel="noreferrer">
+                <img src={tesla} alt="Tesla" className="moneris"></img>
+              </a>
+            </div>
+          </div>
+          <div className="container" key="moneris">
+            <div style={{ position: "relative" }} className="text-stuff">
+              <br />
+              <h2 className="description">
+                i am currently working at{" "}
+                <a
+                  href="https://www.moneris.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span style={{ color: "#00B7C9" }}>Moneris</span>
+                </a>
+                .
+              </h2>
+              <h2 className="description">
+                there, i'm using languages like{" "}
+                <span style={{ backgroundColor: "#F7DF1E" }}> JavaScript</span>{" "}
+                and
+                <span style={{ color: "#E54C21" }}> HTML</span>/
+                <span style={{ color: "#264DE4" }}>CSS</span> to develop
+                <span style={{ color: "#ab00d6" }}> beautiful </span>
+                applications.
+              </h2>
+              <h2 className="description">
+                i've also been using frameworks like{" "}
+                <span style={{ color: "#53c0db" }}>React</span>,{" "}
+                <span style={{ color: "#764ABC" }}>Redux</span>, and{" "}
+                <span style={{ color: "#007BF7" }}>Material-UI</span>.
+              </h2>
+              <p>2022-2023</p>
+            </div>
+            <div style={{ margin: "3%" }}></div>
+            <div className="pic-stuff" style={{ marginTop: "3.25rem" }}>
+              <a
+                href="https://www.moneris.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={moneris} alt="moneris" className="moneris"></img>
+              </a>
+            </div>
           </div>
           <div
             className="container"

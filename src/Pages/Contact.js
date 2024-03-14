@@ -60,7 +60,7 @@ const Contact = () => {
               <img src={mail} alt="mail_icon" className="mail" />
             </a>
             <a
-              href="https://www.linkedin.com/in/cj-nour-3b82681a0/"
+              href="https://www.linkedin.com/in/cjnour/"
               target="_blank"
               rel="noreferrer"
             >
